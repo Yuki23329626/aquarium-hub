@@ -1,0 +1,758 @@
+=======================================
+= enbas build :: Jan 16 2018 08:49:17 =
+=======================================
+[ENB_AS][DB-I]inited successfully!
+[ENB_AS][RRC-I]Frequency Band = 7
+[ENB_AS][RRC-I]dlEarfcn=3050 ulEarfcn=21050
+_phyDriverRxThread priority(98)
+[ENB_AS][MAC-I]MAC_init 1.4MHz
+[ENB_AS][RLC-V1]inited successfully!
+[ENB_AS][PDCP-I]inited successfully!
+[ENB_AS][DRB-I]inited successfully!
+[ENB_AS][MACA-W]maca_getPhyCapability: this function is disabled
+[ENB_AS][RRC-I]logicChannelCfgPreNB(1)
+[ENB_AS][RRC-I]logicalChannelSRCfgPreNB(1)
+[ENB_AS][RRC-I]carrierConfigDedicatedPreNB(0)
+[ENB_AS][RRC-I]npuschConfigDedicatedPreNB(1)
+[ENB_AS][RRC-I]uplinkPowerControlDedicatedPreNB(1)
+[ENB_AS][RRC-V2]inited successfully!
+[ENB_AS][RRC-I]RRC_init 1.4MHz
+[ENB_AS][RRM-I]inited successfully!
+[ENB_AS][S1-I]Set command callback: 0x0x52928b=> WPS_TNL_KMOD
+DL enbas-enbctrl msg queue exist! remove (753666)
+[ENB_AS][SAP-I]inited successfully!
+[ENB_AS][S1-I]Set command callback: 0x0x568706=> WPS_DPLANE_KMOD
+DL enbas-enbctrl msg queue exist! remove (851970)
+[ENB_AS][MAIN-I]main_init() successfully!
+IPC_DLrecv msgrcv: Identifier removed
+eNodeB init done!
+=== NB-IoT Parameters ===
+MCS Index DL(10) UL(8)
+alpha             =(7)
+backoff           =(5)
+bsrzerocount      =(4000)
+candidatebegin    =(0)
+candidate         =(8)
+cbrasc            =(1)
+ceretry           =(6)
+cplenth           =(0)
+cpu               =(1)
+delayindexbegin   =(0)
+deltamsg3         =(6)
+dlharqrep         =(0)
+dlregulardelay    =(5)
+dlrepeat          =(0)
+dlretx            =(6)
+dra               =(0)
+drxcycle          =(0)
+gvalue            =(3)
+macdebug          =(0x00000001)
+msg3mcsidx        =(0)
+msg4mask          =(27)
+msg5duration      =(60000)
+multitone         =(3)
+NpdcchNumRepeat   =(1)
+nrs               =(20)
+numdlharq         =(1)
+numulharq         =(1)
+p0                =(7)
+p0N               =(10)
+pagingrep         =(0)
+pagingrmax        =(0)
+pagingtbs         =(4)
+pdcchoffset       =(0)
+periodicbsr       =(1)
+pmax              =(2)
+ppower            =(15)
+rachnumsc         =(3)
+rachperiod        =(7)
+rachpusch         =(0)
+rachrepeat        =(0)
+rachscofst        =(0)
+rachstart         =(0)
+ramp              =(3)
+raretry           =(8)
+rarntiEnd         =(256)
+rartbsindex       =(7)
+raWaitTime        =(1)
+rawindow          =(4)
+rmax              =(3)
+s1index           =(1)
+s2period          =(1)
+s2repeat          =(3)
+s2tbs             =(2)
+scSpacing         =(1)
+sib3              =(0)
+siwindow          =(0)
+t1bmsize          =(4)
+ulregulardelay    =(0)
+ulrepeat          =(0)
+ulretx            =(6)
+utatimer          =(6)
+wait for Set eNodeB Config from enbCtrl ...
+[ENB_AS][RRM-W]eNB cfg : We only support 1 cell eNB for now !!!
+[ENB_AS][RRM-W]eNB cfg : Only the setting of first cell will be applied
+[ENB_AS][DB-I]Item [10] modified
+[ENB_AS][DB-I]Item [7] modified
+[ENB_AS][DB-I]Item [11] modified
+[ENB_AS][DB-I]Item [12] modified
+[ENB_AS][RRC-I]Frequency Band = 8
+[ENB_AS][RRC-I]dlEarfcn=3460 ulEarfcn=21460
+[ENB_AS][MAC-I]symbol 0 group(1) dlRbNumber(6) regNum(5) numOfCce(0)
+[ENB_AS][MAC-I]symbol 1 dlRbNumber(6) regNum(23) numOfCce(2)
+[ENB_AS][MAC-I]symbol 2 dlRbNumber(6) regNum(41) numOfCce(4)
+[ENB_AS][MAC-I]maxUeNum(256) CRNTI_EXTEND_NUM(2) rntiDistance(1) crntiNum(512)
+[ENB_AS][DB-I]Item [12] modified
+TempBitmap[0]
+mac_printBitmap
+(0)	11111111 11111001 00001000 11000110 00010000 10001100 01100001 00001000  (63)
+
+mac_procPremierRxIndTask priority(95)
+[ENB_AS][MAC-W]MAC Start finishes!!
+
+mac_procRxIndTask priority(75)
+[ENB_AS][MAIN-I]eNodeB system start !!
+[ENB_AS][RRC-I]Frequency Band = 8
+[ENB_AS][RRC-I]dlEarfcn=3460 ulEarfcn=21460
+[ENB_AS][MAIN-I]freqDl(926000), freqUl(881000)
+[ENB_AS][MACA-I]CONFIG.req [ 1] Duplexing Mode: 1
+[ENB_AS][MACA-I]CONFIG.req [ 2] Tx Antenna Ports: 1
+[ENB_AS][MACA-I]CONFIG.req [ 3] Rx Antenna Ports: 1
+[ENB_AS][MACA-I]CONFIG.req [ 4] PHY Cell ID: 0
+[ENB_AS][MACA-I]CONFIG.req [ 5] DL Bandwidth: 6
+[ENB_AS][MACA-I]CONFIG.req [ 6] UL Bandwidth: 6
+[ENB_AS][MACA-I]CONFIG.req [ 7] Reference Signal Power: 100(-25)
+[ENB_AS][MACA-I]CONFIG.req [ 8] Sync. Signal Power Offset: 5000
+[ENB_AS][MACA-I]CONFIG.req [ 9] CFI Power Offset: 5000
+[ENB_AS][MACA-I]CONFIG.req [10] DCI Power Offset: 5000
+[ENB_AS][MACA-I]CONFIG.req [11] PRACH Configuration Index: 3
+[ENB_AS][MACA-I]CONFIG.req [12] PRACH Root Sequence Index: 22
+[ENB_AS][MACA-I]CONFIG.req [13] PRACH Zero Correlation Zone Configuration: 5
+[ENB_AS][MACA-I]CONFIG.req [14] PRACH High Speed Flag: 0
+[ENB_AS][MACA-I]CONFIG.req [15] PRACH Frequency Offset: 4
+[ENB_AS][MACA-I]CONFIG.req [16] PUSCH UL RS Hopping: 0
+[ENB_AS][MACA-I]CONFIG.req [17] PUSCH Group Assignment: 0
+[ENB_AS][MACA-I]CONFIG.req [18] PUSCH Cyclic Shift 1 for DMRS: 0
+[ENB_AS][MACA-I]CONFIG.req [19] PUSCH Hopping Mode: 0
+[ENB_AS][MACA-I]CONFIG.req [20] PUSCH Hopping Offset: 8
+[ENB_AS][MACA-I]CONFIG.req [21] PUSCH Number of Sub-bands: 1
+[ENB_AS][MACA-I]CONFIG.req [22] PUCCH Delta Shift: 1
+[ENB_AS][MACA-I]CONFIG.req [23] PUCCH N_CQI RB: 2
+[ENB_AS][MACA-I]CONFIG.req [24] PUCCH N_AN CS: 0
+[ENB_AS][MACA-I]CONFIG.req [25] PUCCH N1Pucch-AN: 6
+[ENB_AS][MACA-I]CONFIG.req [26] SRS Bandwidth Configuration: 0
+[ENB_AS][MACA-I]CONFIG.req [28] PHICH Resource: 2
+[ENB_AS][MACA-I]CONFIG.req [29] PHICH Duration: 0
+[ENB_AS][MACA-I]CONFIG.req [32] P-B: 0
+[ENB_AS][MACA-I]CONFIG.req [33] Cyclic Prefix Type: 0
+[ENB_AS][MACA-I]CONFIG.req [51] PHY SYNC Mode: 2
+[ENB_AS][MACA-I]CONFIG.req [52] Data Report Mode: 0
+[ENB_AS][MACA-I]CONFIG.req [53] RACH and SR Report Mode: 1
+[ENB_AS][MACA-I]CONFIG.req [80] Extraction Window Margin: 5
+[ENB_AS][MACA-I]CONFIG.req [81] PUCCH Noise Estimation Gamma: 0(0x0)
+[ENB_AS][MACA-I]CONFIG.req [83] PRACH Format 0 Peak Ratio: 8908(0x22cc)
+[ENB_AS][MACA-I]CONFIG.req [84] Doppler Estimation Compensation Factor: 65535(0xffff)
+[ENB_AS][MACA-I]CONFIG.req [85] Probability DTX-ACK PUSCH: 26
+[ENB_AS][MACA-I]CONFIG.req [86] Probability DTX-ACK PUCCH Format 1: 26
+[ENB_AS][MACA-I]CONFIG.req [87] NB_SIB schedulingInfoSIB1-r13: 1
+[ENB_AS][MACA-I]CONFIG.req [88] CP length of a NPRACH resource for CE1: 0
+[ENB_AS][MACA-I]CONFIG.req [89] Periodicity of a NPRACH resource for CE1: 2560
+[ENB_AS][MACA-I]CONFIG.req [90] Start time of the NPRACH resource in one period for CE1: 8
+[ENB_AS][MACA-I]CONFIG.req [91] Frequency location of the NPRACH resource for CE1: 0
+[ENB_AS][MACA-I]CONFIG.req [92] Number of sub-carriers in a NPRACH resource for CE1: 48
+[ENB_AS][MACA-I]CONFIG.req [93] Number of NPRACH repetitions per attempt for each NPRACH resource for CE1: 1
+[ENB_AS][MACA-E][8609] CONFIG.Rsp has 2 invalid TLVs
+[ENB_AS][MACA-E][8609] invalid TLV(15) : 4
+[ENB_AS][MACA-E][8609] invalid TLV(16) : 0
+[ENB_AS][MACA-E][8609] CONFIG.Rsp has 17 missing TLVs
+[ENB_AS][MACA-W]TTI exceed 1ms!(11990-0=11990 us) (0.1)
+[ENB_AS][MACA-W]ignored a dummy Tx-Vector(0.1)
+[ENB_AS][MACA-W]ignored a dummy Rx-Vector(0.1)
+[ENB_AS][MAC-W]set right system frame number and subframe number(0, 2) macTx(0.3) macRx(0.6)
+[ENB_AS][MACA-W]ignored a dummy Rx-Vector(0.2)
+[ENB_AS][MACA-W]ignored a dummy Rx-Vector(0.3)
+[ENB_AS][MACA-W]ignored a dummy Rx-Vector(0.4)
+[ENB_AS][MACA-I]UnPackRachIndication:: preambleNum(1)
+[ENB_AS][MAC-I]Got a RACH.ind(769, 3), TX_MAC_TIME(3, 769, 9)
+
+#MSG1 PreambleIndex=19
+
+#MSG2 RAPID=19 TimingAdvance=10 UL_grant ScSpacing=1 Sc=11 Dly=0 Rep=0 Mcs=0 TC-RNTI=258
+[ENB_AS][MAC-I]Tx(769.9)
+
+#MSG2 DCI_N1 Dly=0 Sf=0 Mcs=7 Rep=0 Ndi=0 HarqAckRes=0 DciRep=0
+[ENB_AS][MAC-I]Debug MSG3 RxUlschInd rnti(258)
+[ENB_AS][MAC-I]pUe((nil))
+===============================================================
+  pPdu : len = 11
+===============================================================
+               0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  
+===============================================================
+  00000951  : 00 08 2a 33 2e 74 a0 aa 40 00 00 00 00 00 00 00
+===============================================================
+[ENB_AS][MAC-I]DPR(8), DataVolume(91), PHR(LV:0)
+#MSG3_MAC DPR=8
+
+#MSG3_RRC RRC_PDU=2a332e74a0aa400000
+[ENB_AS][RRC-I] RRC receive: RRC Conn Setup Req ------------------------------------------------------------
+[ENB_AS][RRC-I]rrc_decAsnUlCcchMsgNB: ueId, type= 1
+[ENB_AS][RRC-I]rrc_decAsnUlCcchMsgNB: ueId, random value[]= 0x19 0x97 0x3a 0x50 0x55
+[ENB_AS][RRC-I]rrc_decAsnUlCcchMsgNB: establishmentCauseNB= 1
+[ENB_AS][RRC-I] RRC receive: RRC process Conn Setup Req Msg ------------------------------------------------------------
+[ENB_AS][RRC-I]RRCConnectionRequestNB is received via C-RNTI[258]
+[UCI] >>> REMIND : sizeof(tRrcUeContext) = 2616
+[ENB_AS][PDCP-I]Create a SA(139968890540945)
+[ENB_AS][RRC-I]UE handle[0] is allocated for C-RNTI[258]
+[ENB_AS][RRC-I]_procConnReqOnStart: rcv RRC conn req, ueHandle= 0, establishmentCauseNB= 1
+[ENB_AS][RRM-I]Register a UE (tnlUeId=0)
+[ENB_AS][RRM-I]rrm_reqRrcConnEstabAdmission: RrmConnEstablishmentCauseNB(1)
+[ENB_AS][RRC-I]rrc_applyInitMacPhyConfigNB: alignTimer(6)
+[ENB_AS][PDCP-I]Create a PDCP SRB Entity(RB ID=3)
+[ENB_AS][RRC-I]rrc_createDcchSrb: logicChnlId= 3
+[ENB_AS][RRC-I]MSG4 periodicBsrTimerNB(1)
+[ENB_AS][RRC-I] RRC send: RRC Conn Setup  ------------------------------------------------------------
+[ENB_AS][RRC-I]_procAdmitGrantOnAdmitPend: ASN.1 encode RRC conn setup NB, encode (11) bytes
+
+#MSG4_RRC RRC_PDU=3013325cc259db8e6ce3e0
+[ENB_AS][RRC-I] RRCConnectionSetup was sent
+[ENB_AS][RRC-I]MSG5 pendingDuration= 60000 ms, ueHandle= 0, pp= 64, MacTx(775.6)
+
+#MSG4 ContentionResolutionIdentity=2a332e74a0aa
+[ENB_AS][MAC-I]Tx(775.6)
+[ENB_AS][RRC-I]UE handle[0] : RRCConnectionSetupCompleteNB is received
+[ENB_AS][RRC-I] Receive RRC Conn Setup Complete ------------------------------------------------------------
+[ENB_AS][RRC-I] Receive RRC Conn Setup Complete, Dump NAS PDU
+
+#MSG5_RRC RRC_PDU=10002903a0b90424b333130000000803f838000000020000160100e818939340401088008000084083000000004183000000000006800001800005000002800008000008801881f2f01a480881abac537ae0b700a680
+[ENB_AS][RRM-I]Activate the UE (tnlUeId=0)
+[ENB_AS][RRM-I]rrm_indRrcConnEstabSucc: Send INITIAL UE MESSAGE to eNBCtrl
+[ENB_AS][MAC-I]mac_procDlHarqFeedback :: NACK, RNTI(258) ProcID(0)
+[DL ReTx] ue(0) rnti(258) Harq Retry(6)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][RRC-I][Release Proc]_procReleaseCmdOnOperation: SRB1 pdcpEntity= 0x7f4d0c002e91, rlcEntity= 0xb03f20
+[ENB_AS][RRC-I][leu]rrc_calcDlDcchDelay: delay= 320, drxDelay= 0
+[ENB_AS][RRC-I]RRCConnectionRelease was sent
+[ENB_AS][RRM-I]De-register a UE (tnlUeId=0)
+[ENB_AS][PDCP-I]Delete a PDCP SRB Entity(RB ID=3)
+[ENB_AS][PDCP-I]Delete the PDCP Entity(139968890547857)
+[ENB_AS][MAC-I][BSR]mac_releaseRxNeedGrantEntityBsrList_Nb :: crnti(258), bsrPeriodNb(4), ppIndex(0), activeFlag(1)
+[ENB_AS][MAC-I]mac_initHarq:: by ResetDB
+[ENB_AS][PDCP-I]Delete the SA(139968890540945)
+[ENB_AS][MACA-I]UnPackRachIndication:: preambleNum(1)
+[ENB_AS][MAC-I]Got a RACH.ind(1, 3), TX_MAC_TIME(58, 1, 9)
+
+#MSG1 PreambleIndex=25
+
+#MSG2 RAPID=25 TimingAdvance=14 UL_grant ScSpacing=1 Sc=11 Dly=0 Rep=0 Mcs=0 TC-RNTI=258
+[ENB_AS][MAC-I]Tx(1.9)
+
+#MSG2 DCI_N1 Dly=0 Sf=0 Mcs=7 Rep=0 Ndi=0 HarqAckRes=0 DciRep=0
+[ENB_AS][MAC-I]Debug MSG3 RxUlschInd rnti(258)
+[ENB_AS][MAC-I]pUe((nil))
+===============================================================
+  pPdu : len = 11
+===============================================================
+               0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  
+===============================================================
+  00000951  : 00 06 28 1a 00 00 00 02 40 00 00 00 00 00 00 00
+===============================================================
+[ENB_AS][MAC-I]DPR(6), DataVolume(49), PHR(LV:0)
+#MSG3_MAC DPR=6
+
+#MSG3_RRC RRC_PDU=281a00000002400000
+[ENB_AS][RRC-I] RRC receive: RRC Conn Setup Req ------------------------------------------------------------
+[ENB_AS][RRC-I]rrc_decAsnUlCcchMsgNB: ueId, type= 0
+[ENB_AS][RRC-I]rrc_decAsnUlCcchMsgNB: ueId, STMSI mmec= 13,  mtmsi= 1
+[ENB_AS][RRC-I]rrc_decAsnUlCcchMsgNB: establishmentCauseNB= 1
+[ENB_AS][RRC-I] RRC receive: RRC process Conn Setup Req Msg ------------------------------------------------------------
+[ENB_AS][RRC-I]RRCConnectionRequestNB is received via C-RNTI[258]
+[UCI] >>> REMIND : sizeof(tRrcUeContext) = 2616
+[ENB_AS][PDCP-I]Create a SA(139968890540817)
+[ENB_AS][RRC-I]UE handle[0] is allocated for C-RNTI[258]
+[ENB_AS][RRC-I]_procConnReqOnStart: rcv RRC conn req, ueHandle= 0, establishmentCauseNB= 1
+[ENB_AS][RRM-I]Register a UE (tnlUeId=0)
+[ENB_AS][RRM-I]rrm_reqRrcConnEstabAdmission: RrmConnEstablishmentCauseNB(1)
+[ENB_AS][RRC-I]rrc_applyInitMacPhyConfigNB: alignTimer(6)
+[ENB_AS][PDCP-I]Create a PDCP SRB Entity(RB ID=3)
+[ENB_AS][RRC-I]rrc_createDcchSrb: logicChnlId= 3
+[ENB_AS][RRC-I]MSG4 periodicBsrTimerNB(1)
+[ENB_AS][RRC-I] RRC send: RRC Conn Setup  ------------------------------------------------------------
+[ENB_AS][RRC-I]_procAdmitGrantOnAdmitPend: ASN.1 encode RRC conn setup NB, encode (11) bytes
+
+#MSG4_RRC RRC_PDU=3013325cc259db8e6ce3e0
+[ENB_AS][RRC-I] RRCConnectionSetup was sent
+[ENB_AS][RRC-I]MSG5 pendingDuration= 60000 ms, ueHandle= 0, pp= 64, MacTx(7.6)
+
+#MSG4 ContentionResolutionIdentity=281a00000002
+[ENB_AS][MAC-I]Tx(7.6)
+[ENB_AS][RRC-I]UE handle[0] : RRCConnectionSetupCompleteNB is received
+[ENB_AS][RRC-I] Receive RRC Conn Setup Complete ------------------------------------------------------------
+[ENB_AS][RRC-I] Receive RRC Conn Setup Complete, Dump NAS PDU
+
+#MSG5_RRC RRC_PDU=1000150b894a8f120103a40185fb327b33015e8680000000a9327b3300652b8110001881f2f01a7a7060b700a680
+[ENB_AS][RRM-I]Activate the UE (tnlUeId=0)
+[ENB_AS][RRM-I]rrm_indRrcConnEstabSucc: Send INITIAL UE MESSAGE to eNBCtrl
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(258)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(258)
+[ENB_AS][MAC-I]mac_procDlHarqFeedback :: NACK, RNTI(258) ProcID(0)
+[DL ReTx] ue(0) rnti(258) Harq Retry(6)
+[ENB_AS][MAC-I]mac_procDlHarqFeedback :: NACK, RNTI(258) ProcID(0)
+[DL ReTx] ue(0) rnti(258) Harq Retry(5)
+[ENB_AS][MAC-I]mac_procDlHarqFeedback :: NACK, RNTI(258) ProcID(0)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[DL ReTx] ue(0) rnti(258) Harq Retry(4)
+[ENB_AS][MAC-I]mac_procDlHarqFeedback :: NACK, RNTI(258) ProcID(0)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[DL ReTx] ue(0) rnti(258) Harq Retry(3)
+[ENB_AS][MAC-I]mac_procDlHarqFeedback :: NACK, RNTI(258) ProcID(0)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[DL ReTx] ue(0) rnti(258) Harq Retry(2)
+[ENB_AS][MAC-I]mac_procDlHarqFeedback :: NACK, RNTI(258) ProcID(0)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[DL ReTx] ue(0) rnti(258) Harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[ENB_AS][MAC-I][UTA] setUtaForcedUlFlag and setDelayedNeedGrantBitmap crnti(258) (254.3)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[UL ReTx] ue(0) rnti(258) harq Retry(6)
+[UL ReTx] ue(0) rnti(258) harq Retry(5)
+[UL ReTx] ue(0) rnti(258) harq Retry(4)
+[UL ReTx] ue(0) rnti(258) harq Retry(3)
+[UL ReTx] ue(0) rnti(258) harq Retry(2)
+[UL ReTx] ue(0) rnti(258) harq Retry(1)
+[ENB_AS][MAC-I][BSR]mac_releaseRxNeedGrantEntityBsrList_Nb :: crnti(258), bsrPeriodNb(4), ppIndex(0), activeFlag(1)
+[ENB_AS][MAC-W]change state to MAC_UL_TIME_ALGIN_STATE_UNSYNC :: notify RRC to release SRS
+[ENB_AS][RRC-W]UE handle[0] C-RNTI[258] : UL sync. lost is detected
+[UL HARQ]can't find rnti(258) UL HARQ process
+[UL HARQ]CRC(NACK):  rxTotSubframe = 3512
+[UL HARQ]NB-IoT HARQ proc(rnti: 258)
+[UL HARQ]   harqProcId         = 0
+[UL HARQ]   ndi                = 0
+[UL HARQ]   txRetry            = 0
+[UL HARQ]   state              = 0
+[UL HARQ]   irv                = 0
+[UL HARQ]   mcs                = 0
+[UL HARQ]   tbLen              = 0
+[UL HARQ]   indicator          = 0
+[UL HARQ]   endToDelay         = 65535
+[UL HARQ]   delay              = 0
+[UL HARQ]   ruLen              = 255
+[UL HARQ]   ruIdx              = 255
+[UL HARQ]   repIdx             = 255
+[UL HARQ]   ul1stTotSubFrm     = 65535
+[UL HARQ]   ulLastTotSubFrm    = 65535
+[UL HARQ]   numTotRxSubframe   = 65535
+[UL HARQ] CRNTI(258) in UTA Unsync State
+[ENB_AS][MACA-I]UnPackRachIndication:: preambleNum(1)
+[ENB_AS][MAC-I]Got a RACH.ind(1, 3), TX_MAC_TIME(77, 1, 9)
+
+#MSG1 PreambleIndex=4
+
+#MSG2 RAPID=4 TimingAdvance=8 UL_grant ScSpacing=1 Sc=11 Dly=0 Rep=0 Mcs=0 TC-RNTI=259
+[ENB_AS][MAC-I]Tx(1.9)
+
+#MSG2 DCI_N1 Dly=0 Sf=0 Mcs=7 Rep=0 Ndi=0 HarqAckRes=0 DciRep=0
+[ENB_AS][MAC-I]Debug MSG3 RxUlschInd rnti(259)
+[ENB_AS][MAC-I]pUe((nil))
+===============================================================
+  pPdu : len = 11
+===============================================================
+               0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  
+===============================================================
+  00000951  : 00 08 2b 84 ea 04 b5 f0 40 00 00 00 00 00 00 00
+===============================================================
+[ENB_AS][MAC-I]DPR(8), DataVolume(91), PHR(LV:0)
+#MSG3_MAC DPR=8
+
+#MSG3_RRC RRC_PDU=2b84ea04b5f0400000
+[ENB_AS][RRC-I] RRC receive: RRC Conn Setup Req ------------------------------------------------------------
+[ENB_AS][RRC-I]rrc_decAsnUlCcchMsgNB: ueId, type= 1
+[ENB_AS][RRC-I]rrc_decAsnUlCcchMsgNB: ueId, random value[]= 0xc2 0x75 0x2 0x5a 0xf8
+[ENB_AS][RRC-I]rrc_decAsnUlCcchMsgNB: establishmentCauseNB= 1
+[ENB_AS][RRC-I] RRC receive: RRC process Conn Setup Req Msg ------------------------------------------------------------
+[ENB_AS][RRC-I]RRCConnectionRequestNB is received via C-RNTI[259]
+[UCI] >>> REMIND : sizeof(tRrcUeContext) = 2616
+[ENB_AS][PDCP-I]Create a SA(139968890559777)
+[ENB_AS][RRC-I]UE handle[1] is allocated for C-RNTI[259]
+[ENB_AS][RRC-I]_procConnReqOnStart: rcv RRC conn req, ueHandle= 1, establishmentCauseNB= 1
+[ENB_AS][RRM-I]Register a UE (tnlUeId=1)
+[ENB_AS][RRM-I]rrm_reqRrcConnEstabAdmission: RrmConnEstablishmentCauseNB(1)
+[ENB_AS][RRC-I]rrc_applyInitMacPhyConfigNB: alignTimer(6)
+[ENB_AS][PDCP-I]Create a PDCP SRB Entity(RB ID=3)
+[ENB_AS][RRC-I]rrc_createDcchSrb: logicChnlId= 3
+[ENB_AS][RRC-I]MSG4 periodicBsrTimerNB(1)
+[ENB_AS][RRC-I] RRC send: RRC Conn Setup  ------------------------------------------------------------
+[ENB_AS][RRC-I]_procAdmitGrantOnAdmitPend: ASN.1 encode RRC conn setup NB, encode (11) bytes
+
+#MSG4_RRC RRC_PDU=3013325cc259db8e6ce3e0
+[ENB_AS][RRC-I] RRCConnectionSetup was sent
+[ENB_AS][RRC-I]MSG5 pendingDuration= 60000 ms, ueHandle= 1, pp= 64, MacTx(7.6)
+
+#MSG4 ContentionResolutionIdentity=2b84ea04b5f0
+[ENB_AS][MAC-I]Tx(7.6)
+[ENB_AS][RRC-I]UE handle[1] : RRCConnectionSetupCompleteNB is received
+[ENB_AS][RRC-I] Receive RRC Conn Setup Complete ------------------------------------------------------------
+[ENB_AS][RRC-I] Receive RRC Conn Setup Complete, Dump NAS PDU
+
+#MSG5_RRC RRC_PDU=10002903a0b90424b333130000000803f838000000020000160100e818939340401088008000084083000000004183000000000006800001800005000002800008000008801881f2f01a480881abac537ae0b700a680
+[ENB_AS][RRM-I]Activate the UE (tnlUeId=1)
+[ENB_AS][RRM-I]rrm_indRrcConnEstabSucc: Send INITIAL UE MESSAGE to eNBCtrl
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[UL ReTx] ue(1) rnti(259) harq Retry(6)
+[UL ReTx] ue(1) rnti(259) harq Retry(5)
+[UL ReTx] ue(1) rnti(259) harq Retry(4)
+[UL ReTx] ue(1) rnti(259) harq Retry(3)
+[UL ReTx] ue(1) rnti(259) harq Retry(2)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[UL ReTx] ue(1) rnti(259) harq Retry(6)
+[UL ReTx] ue(1) rnti(259) harq Retry(5)
+[UL ReTx] ue(1) rnti(259) harq Retry(4)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][RRC-E]UE Handle[0]: T_ReestabRecover Expiry - Release Reqeust
+[ENB_AS][RRC-I][Release Proc]_procReleaseCmdOnOperation: SRB1 pdcpEntity= 0x7f4d0c002ec1, rlcEntity= 0xb03f20
+[ENB_AS][RRC-I][leu]rrc_calcDlDcchDelay: delay= 320, drxDelay= 0
+[ENB_AS][RRC-I]RRCConnectionRelease was sent
+[ENB_AS][RRM-I]De-register a UE (tnlUeId=0)
+[ENB_AS][PDCP-I]Delete a PDCP SRB Entity(RB ID=3)
+[ENB_AS][PDCP-I]Delete the PDCP Entity(139968890547905)
+[ENB_AS][MAC-I]mac_initHarq:: by ResetDB
+[ENB_AS][PDCP-I]Delete the SA(139968890540817)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[UL ReTx] ue(1) rnti(259) harq Retry(6)
+[UL ReTx] ue(1) rnti(259) harq Retry(5)
+[UL ReTx] ue(1) rnti(259) harq Retry(4)
+[UL ReTx] ue(1) rnti(259) harq Retry(3)
+[UL ReTx] ue(1) rnti(259) harq Retry(2)
+[UL ReTx] ue(1) rnti(259) harq Retry(6)
+[UL ReTx] ue(1) rnti(259) harq Retry(5)
+[UL ReTx] ue(1) rnti(259) harq Retry(4)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[UL ReTx] ue(1) rnti(259) harq Retry(6)
+[UL ReTx] ue(1) rnti(259) harq Retry(5)
+[UL ReTx] ue(1) rnti(259) harq Retry(4)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[UL ReTx] ue(1) rnti(259) harq Retry(6)
+[UL ReTx] ue(1) rnti(259) harq Retry(5)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+[ENB_AS][MAC-I]schedule TA control element CRNTI(259)
+[ENB_AS][MAC-I]mac_packTimingAdvance TA(31) crnti(259)
+
+

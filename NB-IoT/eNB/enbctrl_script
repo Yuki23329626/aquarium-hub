@@ -1,0 +1,355 @@
+#!/usr/bin/expect -f
+
+#==================================================================
+# Variables setting
+#==================================================================
+#------------------------------------------------------------------
+# Set IOT_MODE mode "III" or "CHT" or "csist_III"
+# the enb.conf(ENB_CONF_FILE) now is only for Band 7 setting, which is under /user/etc/...
+# NOTE: CHT csglist set nsn type, and ifconfig eth0 down, eth6 up.
+#       QNO ifconfig eth0 down, eth6 up.
+set IOT_MODE   "III"
+#set IOT_MODE   "csist_III"
+#------------------------------------------------------------------
+# Set eNodeB(1) or EPC(0) mode
+set ENB_MODE        "0"
+set HENB_MODE       "0"
+#set IPSEC_ENABLE    "0"
+#set DHCLIENT_ENABLE "0"
+
+if { [string compare $HENB_MODE "0"] == 0 } {
+    set ENB_TYPE "macro"
+} else {
+    set ENB_TYPE "home"
+}
+#send_user "ENB_TYPE($ENB_TYPE)\n"
+#------------------------------------------------------------------
+# MIMO mode 0 (disable) for Set number of TX antenna = 1
+# MIMO mode 1 (enable) for Set number of TX antenna = 2
+# MIMO_MODE parameter is for cmd_agt command using
+#set MIMO_MODE  "0"
+
+#------------------------------------------------------------------
+# Operating Band, Freq, EARFCN setting moved to enb.conf after Rev 2208
+# The setting is only for Band 7, which is based on enb.conf(under /use/etc/..)
+#  7 (2620/2500 MHz 2850)
+# 13 ( 746/777  MHz 5230)
+#set LTE_BAND  "7"
+
+#------------------------------------------------------------------
+# R1 mirror setting and wireshark PC/NB mac
+# DPHY_MIRROR parameter is for cmd_agt command using
+#set DPHY_MIRROR  "0"
+
+#------------------------------------------------------------------
+# HO_MODE = 1 will decrease throughput ueDefault setMeasGap setup 0
+# HO_MODE parameter is for cmd_agt command using
+#set HO_MODE  "0"
+
+#------------------------------------------------------------------
+# X2HO_CONNECT = 1 will setup x2connect between eNB1 and eNB2
+#set X2HO_CONNECT  "1"
+
+#------------------------------------------------------------------
+# III enb config file
+if { [string compare $IOT_MODE "III"] == 0 } {
+	set ENB_CONF_FILE  "enb.conf"
+# eNB 1 information
+        set ENB1_IP   "172.16.0.105"
+        set ENB1_ID_  "466.66.66"
+# enbid(20bit) + cellid(8bit)
+
+# eNB 2 information
+        set ENB2_IP   "172.16.0.101"
+        set ENB2_ID_  "466.66.66"
+# MME information
+        set MME_IP_  "172.16.0.13"
+        set GUMMEI_  "466.66.701.77"
+# MME-code = 0x4d(77)
+
+# PDN GW IP
+    set PDNGW_IP  "172.16.0.11"
+# PLMN ID (MCC.MNC)
+    set PLMN_ID  "466.66"
+
+    set ENB1_TAC     "205"
+}
+
+#----------------------------------------
+# CHT enb config file
+if { [string compare $IOT_MODE "CHT"] == 0 } {
+	set ENB_CONF_FILE  "enb.conf"
+# eNB 1 information
+    set ENB1_IP   "10.102.0.19"
+    set ENB1_ID_  "588.71.82"
+# eNB 2 information
+    set ENB2_IP   "192.168.0.101"
+    set ENB2_ID_  "466.66.322"
+# MME information
+    set MME_IP_   "192.168.0.77"
+    set GUMMEI_   "310.410.701.77"hsng-ESC500-G4
+# PDN GW IP
+    set PDNGW_IP  "192.168.0.99"
+# PLMN ID (MCC.MNC)
+    set PLMN_ID   "310.410"
+
+    set ENB1_TAC     "202"
+}
+
+#----------------------------------------
+# csist_III enb config file
+if { [string compare $IOT_MODE "csist_III"] == 0 } {
+    set ENB_CONF_FILE  "enb.conf"
+# eNB 1 information
+    set ENB1_IP   "10.102.81.49"
+    set ENB1_ID_  "006.06.38409"
+# eNB 2 information
+    set ENB2_IP   "10.102.81.51"
+    set ENB2_ID_  "006.06.322"
+# MME information
+    set MME_IP_   "10.102.81.100"
+    set GUMMEI_   "006.06.32768.1"
+# PDN GW IP
+    set PDNGW_IP  "10.102.81.103"
+# PLMN ID (MCC.MNC)
+    set PLMN_ID   "006.06"
+
+    set ENB1_TAC     "1"
+}
+
+#==================================================================
+# Main
+#==================================================================
+# eNB 1 information
+
+#----------------------------------------
+# MME IP/ID/NAME
+#----------------------------------------
+set ENB1_IP_      "$ENB1_IP"
+set str_ENB1_ID_  "$ENB1_ID_"
+set fields [split $str_ENB1_ID_ "."]
+foreach field $fields {
+   lassign $fields field1 field2 field3
+}
+set ENB1_NAME_mcc   "mcc$field1"
+set ENB1_NAME_mnc   ".mnc$field2"
+set ENB1_NAME_cell  ".cell$field3"
+set ENB1_NAME_      "$ENB1_NAME_mcc$ENB1_NAME_mnc$ENB1_NAME_cell"
+#ENB1_NAME_      = "mcc466.mnc66.cell66"
+
+set ENB2_IP_        "$ENB2_IP"
+set str_ENB2_ID_  "$ENB2_ID_"
+set fields [split $str_ENB2_ID_ "."]
+foreach field $fields {
+   lassign $fields field1 field2 field3
+}
+set ENB2_NAME_mcc   "mcc$field1"
+set ENB2_NAME_mnc   ".mnc$field2"
+set ENB2_NAME_cell  ".cell$field3"
+set ENB2_NAME_      "$ENB2_NAME_mcc$ENB2_NAME_mnc$ENB2_NAME_cell"
+#ENB2_NAME_      = "mcc466.mnc66.cell322"
+
+set str_GUMMEI_  "$GUMMEI_"
+set fields [split $str_GUMMEI_ "."]
+foreach field $fields {
+   lassign $fields field1 field2 field3 field4
+}
+set GUMMEI_mcc    "mcc$field1"
+set GUMMEI_mnc    ".mnc$field2"
+set GUMMEI_mmegi  ".mmegi$field3"
+set GUMMEI_mmec   ".mmec$field4"
+set MME_NAME_     "$GUMMEI_mcc$GUMMEI_mnc$GUMMEI_mmegi$GUMMEI_mmec"
+#MME_NAME_       = "mcc466.mnc66.mmegi701.mmec13"
+
+# START_ENB parameter is for cmd_agt command using
+#set START_ENB   "1"
+
+#------------------------------------------------------------------
+# Open the Log Agt : TBD
+#------------------------------------------------------------------
+#crt.Screen.Send "log_agt -console 1 -outfile uci.log -filecnt 10 -filesize 3 &" & VbCr
+#crt.Screen.WaitForString "#"
+
+#------------------------------------------------------------------
+# Start DPHY module : TBD
+#------------------------------------------------------------------
+#set NET_DEV      "eth6"
+#set ENB_VPHY_ID  "31"
+#set DPHY_ADDR    "00:23:18:EC:C3:92"
+#crt.Screen.Send "insmod ./linux-dphy.ko dphy_if=" + NET_DEV + " dphy_id=" + ENB_VPHY_ID + " dphy_addr=" + DPHY_ADDR & VbCr
+#crt.Screen.WaitForString "#"
+#crt.Screen.Send "mknod /dev/dphy c 110 0" & VbCr
+#crt.Screen.WaitForString "#"
+
+#------------------------------------------------------------------
+# Set AS debug option : TBD
+#------------------------------------------------------------------
+# ENB log options: 'a'  -> all
+#                  'v3' -> vvverbose
+#                  'v2' -> vverbose
+#                  'v1' -> verbose
+#                  'r'  -> rawdata
+#                  'i'  -> info
+#                  'w'  -> warn
+#                  'e'  -> error
+#                  'f'  -> fatal
+#------------------------------------------------------------------
+#crt.Screen.Send "cmd_agt uci log set enb_as main    -v3 -v2 -v1 -r -i +w +e +f" & VbCr
+#crt.Screen.WaitForString "#"
+#crt.Screen.Send "cmd_agt uci log set enb_as evhdlr  -v3 -v2 -v1 -r -i +w +e +f" & VbCr
+#crt.Screen.WaitForString "#"
+#crt.Screen.Send "cmd_agt uci log set enb_as rrc     -v3 -v2 -v1 -r -i -w +e +f" & VbCr
+#crt.Screen.WaitForString "#"
+#crt.Screen.Send "cmd_agt uci log set enb_as pdcp    -v3 -v2 -v1 -r -i +w +e +f" & VbCr
+#crt.Screen.WaitForString "#"
+#crt.Screen.Send "cmd_agt uci log set enb_as rlc     -v3 -v2 -v1 -r -i +w +e +f" & VbCr
+#crt.Screen.WaitForString "#"
+#crt.Screen.Send "cmd_agt uci log set enb_as mac     -v3 -v2 -v1 -r -i -w +e +f" & VbCr
+#crt.Screen.WaitForString "#"
+#crt.Screen.Send "cmd_agt uci log set enb_as maca    -v3 -v2 -v1 -r -i +w +e +f" & VbCr
+#crt.Screen.WaitForString "#"
+#crt.Screen.Send "cmd_agt uci log set enb_as db      -v3 -v2 -v1 -r -i +w +e +f" & VbCr
+#crt.Screen.WaitForString "#"
+#crt.Screen.Send "cmd_agt uci log set enb_as sap     -v3 -v2 -v1 -r -i +w +e +f" & VbCr
+#crt.Screen.WaitForString "#"
+#crt.Screen.Send "cmd_agt uci log set enb_as drb     -v3 -v2 -v1 -r -i +w +e +f" & VbCr
+#crt.Screen.WaitForString "#"
+#crt.Screen.Send "cmd_agt uci log set enb_as crypto  -v3 -v2 -v1 -r -i +w +e +f" & VbCr
+#crt.Screen.WaitForString "#"
+#crt.Screen.Send "cmd_agt uci log set enb_as rrm     -v3 -v2 -v1 -r -i +w +e +f" & VbCr
+#crt.Screen.WaitForString "#"
+#crt.Screen.Send "cmd_agt uci log set enb_as osw     -v3 -v2 -v1 -r -i +w +e +f" & VbCr
+#crt.Screen.WaitForString "#"
+#------------------------------------------------------------------
+
+set prefix1   "hsng-ESC500-G4>"
+set prefix2   "hsng-ESC500-G4#"
+set prefix3   "hsng-ESC500-G4(config)#"
+
+#------------------------------------------------------------------
+# enbctrl debug option and setting
+#------------------------------------------------------------------
+if { [string compare $ENB_MODE "0"] == 0 } {
+    spawn telnet 127.0.0.1 5701
+    expect "$prefix1"
+	send "en\r"
+	expect "$prefix2"
+	send "conf t\r"
+	expect "$prefix3"
+	sleep 1
+    send "lte debug context set 111111\r"
+    expect "$prefix3"
+    send "lte context debug all\r"
+    expect "$prefix3"
+      
+    send "lte debug core set 111111\r"
+    expect "$prefix3"
+    send "lte core debug all\r"
+    expect "$prefix3"
+    send "lte debug ebr set 000000\r"
+    expect "$prefix3"
+	#send "lte ebr debug all\r"
+	#expect "$prefix3"
+	send "lte debug entry set 111111\r"
+	expect "$prefix3"
+	send "lte entry debug all\r"
+	expect "$prefix3"
+	send "lte debug kclient set 100000\r"
+	expect "$prefix3"
+	send "lte debug nas set 111111\r"
+	expect "$prefix3"
+	send "lte nas debug all\r"
+	expect "$prefix3"
+	send "lte debug s1ap set 111111\r"
+	expect "$prefix3"
+	send "lte s1ap debug all\r"
+	expect "$prefix3"
+	send "lte debug s1conn set 111111\r"
+	expect "$prefix3"
+	send "lte s1conn debug all\r"
+	expect "$prefix3"
+	send "lte debug s1ho set 000000\r"
+	expect "$prefix3"
+	#send "lte s1ho debug all\r"
+	#expect "$prefix3"
+	send "lte debug x2ap set 000000\r"
+	expect "$prefix3"
+	#send "lte x2ap debug all\r"
+	#expect "$prefix3"
+	send "lte debug x2conn set 000000\r"
+	expect "$prefix3"
+	#send "lte x2conn debug all\r"
+	#expect "$prefix3"
+	send "lte debug x2ho set 000000\r"
+	expect "$prefix3"
+	#send "lte x2ho debug all\r"
+	#expect "$prefix3"
+
+#	send "lte debug uk set 111111\r"
+#	expect "$prefix3"
+#	send "lte debug uk_k set 010011\r"
+#	expect "$prefix3"
+#	send "lte debug wps_k set 010011\r"
+#	expect "$prefix3"
+#	send "lte debug kserver_k set 010011\r"
+#	expect "$prefix3"
+
+	send "lte debug utlsctp set 111111\r"
+	expect "$prefix3"
+
+	send "lte debug enbctrl set 111111\r"
+	expect "$prefix3"
+
+	send "lte enb local host $ENB1_IP_ $ENB_TYPE $ENB1_ID_ $ENB1_NAME_\r"
+	expect "$prefix3"
+
+	send "lte s1ap start\r"
+	expect "$prefix3"
+
+	send "lte mme del $GUMMEI_\r"
+	expect "$prefix3"
+	send "lte mme del 466.66.701.14\r"
+	expect "$prefix3"
+	send "lte mme del 466.66.701.78\r"
+	expect "$prefix3"
+	send "lte mme add $MME_IP_ $GUMMEI_ $MME_NAME_\r"
+	expect "$prefix3"
+
+	send "lte enb local support tracking-area $PLMN_ID.$ENB1_TAC\r"
+	expect "$prefix3"
+	send "lte enb local support set-to-mac\r"
+	expect "$prefix3"
+
+#	send "lte enb neighbor $ENB2_IP_ $ENB2_ID_\r"
+#	expect "$prefix3"
+	send "lte enb neighbor support set-to-mac\r"
+	expect "$prefix3"
+	send "lte x2ap start\r"
+	expect "$prefix3"
+
+
+    if { [string compare $IOT_MODE "CHT"] == 0 } {
+        send "lte s1ap version set nsn\r"
+        expect "$prefix3"
+	}
+
+	send "lte s1conn setup $GUMMEI_\r"
+	expect "$prefix3"
+
+	send "exit\r"
+	expect "$prefix2"
+	send "exit\r"
+	expect "$"
+
+    exit
+} else {
+    send_user "ENB_MODE($ENB_MODE): not support self run\n"
+}
+
+   
+   
+   
+
+
+
+

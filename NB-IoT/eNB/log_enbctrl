@@ -1,0 +1,775 @@
+enbctrl event master ( 0x1530030 )
+[core]:Enter-Func:wps_core_api_allocEnbConf (wps_core_api.c:363)
+
+[core]:[INFO] eNB Entity Config file Loading ...
+[core]:[CONF] 	Parse config file to Json object.
+[core]:[CONF] 	eNB ID: 466.66.8002(undefined)
+[core]:Enter-Func:wps_core_db_setLocalId (wps_core_db.c:132)
+[core]:[CONF] 	Default DRX: 9
+[core]:Enter-Func:wps_core_db_setLocalDefaultDrx (wps_core_db.c:178)
+[core]:[CONF] 	Tracking Area List: 
+[core]:[CONF] 		Tracking Area Code(1): 202
+[core]:Enter-Func:wps_core_api_allocTrackingArea (wps_core_api.c:890)
+[core]:Enter-Func:wps_core_api_setTracOfTrackingArea (wps_core_api.c:959)
+[core]:[CONF] 			PLMN(MCC.MNC)(1): 466.66
+[core]:Enter-Func:wps_core_api_setPlmnOfTrackingArea (wps_core_api.c:979)
+[core]:Enter-Func:wps_core_api_getPlmnOfTrackingArea (wps_core_api.c:1013)
+[core]:Enter-Func:wps_core_api_allocTrackingArea (wps_core_api.c:890)
+[core]:Enter-Func:wps_core_api_cpyTrackingArea (wps_core_api.c:928)
+[core]:Enter-Func:wps_core_db_setLocalTrackingArea (wps_core_db.c:227)
+[core]:Enter-Func:wps_core_api_getTracOfTrackingArea (wps_core_api.c:1031)
+[core]:Enter-Func:wps_core_api_allocTrackingArea (wps_core_api.c:890)
+[core]:Enter-Func:wps_core_api_setTracOfTrackingArea (wps_core_api.c:959)
+[core]:Enter-Func:wps_core_api_getPlmnOfTrackingArea (wps_core_api.c:1013)
+[core]:Enter-Func:wps_core_api_setPlmnOfTrackingArea (wps_core_api.c:979)
+[core]:Enter-Func:wps_core_api_getPlmnOfTrackingArea (wps_core_api.c:1013)
+[core]:Enter-Func:wps_core_api_freeTrackingArea (wps_core_api.c:899)
+[core]:Enter-Func:wps_core_api_freeTrackingArea (wps_core_api.c:899)
+[core]:[CONF] 	Served CSG List: 
+[core]:[CONF] 		CSG ID(1): 100
+[core]:Enter-Func:wps_core_db_addLocalServedCsg (wps_core_db.c:313)
+[core]:Enter-Func:wps_core_api_allocCsgId (wps_core_api.c:50)
+[core]:[CONF] 		CSG ID(2): 200
+[core]:Enter-Func:wps_core_db_addLocalServedCsg (wps_core_db.c:313)
+[core]:Enter-Func:wps_core_api_allocCsgId (wps_core_api.c:50)
+[core]:[CONF] 			Maximum TX Power: 10.(Walts)
+[core]:Enter-Func:wps_core_db_setLocalMaxPower (wps_core_db.c:366)
+[core]:[CONF] 			Reference signal power: -25.(dBm)
+[core]:Enter-Func:wps_core_db_setLocalRefSigPower (wps_core_db.c:386)
+[core]:[CONF] 			Pb for PDSCH config: 0.
+[core]:Enter-Func:wps_core_db_setLocalPb (wps_core_db.c:406)
+[core]:[CONF] 			Duplex Type: 0.(0:FDD, 1:TDD)
+[core]:Enter-Func:wps_core_api_allocFddCellInfo (wps_core_api.c:74)
+[core]:[CONF] 			FDD DL-EARFN: 3460.
+[core]:[CONF] 			FDD UL-EARFN: 21460.
+[core]:Enter-Func:wps_core_db_setLocalDuplex (wps_core_db.c:426)
+[core]:Enter-Func:wps_core_api_cpyFddCellInfo (wps_core_api.c:88)
+[core]:[CONF] 	Neighbor Network-Known Profile: 
+[core]:Enter-Func:wps_core_api_allocEnbConf (wps_core_api.c:363)
+[core]:[CONF] 		NBR IP(1): 192.168.0.100
+[core]:[CONF] 			NBR ID: 466.66.66(undefined)
+[core]:[CONF] 			eNB Type: Home
+[core]:[CONF] 			Duplex Type: 0.(0:FDD, 1:TDD)
+[core]:[CONF] 			FDD DL-EARFN: 2850.
+[core]:[CONF] 			FDD UL-EARFN: 20850.
+[core]:Enter-Func:wps_core_db_addNbr (wps_core_db.c:481)
+[core]:Enter-Func:wps_core_api_allocEnbConf (wps_core_api.c:363)
+[core]:Enter-Func:wps_core_api_cpyFddCellInfo (wps_core_api.c:88)
+[core]:Enter-Func:wps_core_api_cpyTddCellInfo (wps_core_api.c:109)
+[core]:[CONF] 	NB-IoT Default DRX: 3
+[core]:Enter-Func:wps_core_db_setLocalNbDefaultDrx (wps_core_db.c:199)
+
+[core]:[INFO] eNB Entity Config file Loading ...
+[core]:[CONF] 	Parse config file to Json object.
+[core]:[CONF] 	MME Network-Known Profile: 
+[core]:[CONF] 		MME IP(1): 172.16.0.13
+[core]:[CONF] 		
+[core]:Enter-Func:wps_core_api_allocGummeiPool (wps_core_api.c:613)
+[core]:[CONF] 			Served Gummei Profile: 
+[core]:[CONF] 				Served PLMN: 
+[core]:[CONF] 					PLMN(MCC.MNC)(1): 466.66
+[core]:Enter-Func:wps_core_api_setPlmnOfGummeiPool (wps_core_api.c:677)
+[core]:[CONF] 				Served MME Group: 
+[core]:[CONF] 					GroupID(1): 701
+[core]:Enter-Func:wps_core_api_setGroupIdOfGummeiPool (wps_core_api.c:702)
+[core]:[CONF] 				Served MMECode: 
+[core]:[CONF] 					Code(1): 77
+[core]:Enter-Func:wps_core_api_setMmecOfGummeiPool (wps_core_api.c:727)
+[core]:Enter-Func:wps_core_api_getPlmnOfGummeiPool (wps_core_api.c:761)
+[core]:Enter-Func:wps_core_api_getGroupIdOfGummeiPool (wps_core_api.c:780)
+[core]:Enter-Func:wps_core_api_getMmecOfGummeiPool (wps_core_api.c:799)
+[core]:[CONF] 		
+[core]:Enter-Func:wps_core_mme_add (wps_core_mme.c:147)
+[core]:Enter-Func:wps_core_api_getPlmnOfGummeiPool (wps_core_api.c:761)
+[core]:Enter-Func:wps_core_api_getGroupIdOfGummeiPool (wps_core_api.c:780)
+[core]:Enter-Func:wps_core_api_getMmecOfGummeiPool (wps_core_api.c:799)
+[core]:Enter-Func:wps_core_api_getMmecOfGummeiPool (wps_core_api.c:799)
+[core]:Enter-Func:wps_core_api_getGroupIdOfGummeiPool (wps_core_api.c:780)
+[core]:Enter-Func:wps_core_api_getPlmnOfGummeiPool (wps_core_api.c:761)
+[core]:Enter-Func:core_mme_allocDb (wps_core_mme.c:47)
+[core]:Enter-Func:wps_core_api_allocGummeiPool (wps_core_api.c:613)
+[core]:Enter-Func:wps_core_api_getPlmnOfGummeiPool (wps_core_api.c:761)
+[core]:Enter-Func:wps_core_api_setPlmnOfGummeiPool (wps_core_api.c:677)
+[core]:Enter-Func:wps_core_api_getPlmnOfGummeiPool (wps_core_api.c:761)
+[core]:Enter-Func:wps_core_api_getGroupIdOfGummeiPool (wps_core_api.c:780)
+[core]:Enter-Func:wps_core_api_setGroupIdOfGummeiPool (wps_core_api.c:702)
+[core]:Enter-Func:wps_core_api_getGroupIdOfGummeiPool (wps_core_api.c:780)
+[core]:Enter-Func:wps_core_api_getMmecOfGummeiPool (wps_core_api.c:799)
+[core]:Enter-Func:wps_core_api_setMmecOfGummeiPool (wps_core_api.c:727)
+[core]:Enter-Func:wps_core_api_getMmecOfGummeiPool (wps_core_api.c:799)
+[core]:Enter-Func:wps_core_api_freeGummeiPool (wps_core_api.c:624)
+[core]:[CONF] 		MME IP(2): 172.16.8.78
+[core]:[CONF] 		
+[core]:Enter-Func:wps_core_api_allocGummeiPool (wps_core_api.c:613)
+[core]:[CONF] 			Served Gummei Profile: 
+[core]:[CONF] 				Served PLMN: 
+[core]:[CONF] 					PLMN(MCC.MNC)(1): 466.66
+[core]:Enter-Func:wps_core_api_setPlmnOfGummeiPool (wps_core_api.c:677)
+[core]:[CONF] 				Served MME Group: 
+[core]:[CONF] 					GroupID(1): 701
+[core]:Enter-Func:wps_core_api_setGroupIdOfGummeiPool (wps_core_api.c:702)
+[core]:[CONF] 				Served MMECode: 
+[core]:[CONF] 					Code(1): 78
+[core]:Enter-Func:wps_core_api_setMmecOfGummeiPool (wps_core_api.c:727)
+[core]:Enter-Func:wps_core_api_getPlmnOfGummeiPool (wps_core_api.c:761)
+[core]:Enter-Func:wps_core_api_getGroupIdOfGummeiPool (wps_core_api.c:780)
+[core]:Enter-Func:wps_core_api_getMmecOfGummeiPool (wps_core_api.c:799)
+[core]:[CONF] 		
+[core]:Enter-Func:wps_core_mme_add (wps_core_mme.c:147)
+[core]:Enter-Func:wps_core_api_getPlmnOfGummeiPool (wps_core_api.c:761)
+[core]:Enter-Func:wps_core_api_getGroupIdOfGummeiPool (wps_core_api.c:780)
+[core]:Enter-Func:wps_core_api_getMmecOfGummeiPool (wps_core_api.c:799)
+[core]:Enter-Func:wps_core_api_isContainedGummei (wps_core_api.c:848)
+[core]:Enter-Func:wps_core_api_getMmecOfGummeiPool (wps_core_api.c:799)
+[core]:Enter-Func:wps_core_api_getGroupIdOfGummeiPool (wps_core_api.c:780)
+[core]:Enter-Func:wps_core_api_getPlmnOfGummeiPool (wps_core_api.c:761)
+[core]:Enter-Func:core_mme_allocDb (wps_core_mme.c:47)
+[core]:Enter-Func:wps_core_api_allocGummeiPool (wps_core_api.c:613)
+[core]:Enter-Func:wps_core_api_getPlmnOfGummeiPool (wps_core_api.c:761)
+[core]:Enter-Func:wps_core_api_setPlmnOfGummeiPool (wps_core_api.c:677)
+[core]:Enter-Func:wps_core_api_getPlmnOfGummeiPool (wps_core_api.c:761)
+[core]:Enter-Func:wps_core_api_getGroupIdOfGummeiPool (wps_core_api.c:780)
+[core]:Enter-Func:wps_core_api_setGroupIdOfGummeiPool (wps_core_api.c:702)
+[core]:Enter-Func:wps_core_api_getGroupIdOfGummeiPool (wps_core_api.c:780)
+[core]:Enter-Func:wps_core_api_getMmecOfGummeiPool (wps_core_api.c:799)
+[core]:Enter-Func:wps_core_api_setMmecOfGummeiPool (wps_core_api.c:727)
+[core]:Enter-Func:wps_core_api_getMmecOfGummeiPool (wps_core_api.c:799)
+[core]:Enter-Func:wps_core_api_freeGummeiPool (wps_core_api.c:624)
+[core]:Enter-Func:wps_core_initUeList (wps_core_ue.c:915)
+[WARN] Try to use a non-registered UTL_DEBUG caller: s1ho !!
+[s1ho]:Enter-Func:wps_s1ho_init (wps_s1ho_main.c:54)
+[WARN] Try to use a non-registered UTL_DEBUG caller: x2ho !!
+[x2ho]:Enter-Func:wps_x2ho_init (wps_x2ho_main.c:54)
+[core]:Enter-Func:wps_core_db_getLocalId (wps_core_db.c:148)
+[core]:Enter-Func:wps_core_db_getLocalIp (wps_core_db.c:67)
+[core]:[DB] Local IP NOT Found.
+[core]:Enter-Func:wps_core_db_setLocalId (wps_core_db.c:132)
+[core]:Enter-Func:wps_core_db_setLocalIp (wps_core_db.c:58)
+[core]:Enter-Func:wps_core_db_setLocalName (wps_core_db.c:98)
+[core]:Enter-Func:wps_core_api_getLocalIp (wps_core_api.c:1164)
+[core]:Enter-Func:wps_core_db_getLocalIp (wps_core_db.c:67)
+[enbctrl]:Enter-Func:enbctrl_startSctpComm (enbctrl_comm.c:320)
+[utlsctp]:Enter-Func:utl_sctp_openSocket (utl_sctp.c:582)
+[utlsctp]:Expect socket name: 172.16.0.105:36412
+[utlsctp]:Check "/proc/net/sctp"
+[utlsctp]:Enter-Func:utl_sctp_startSocket (utl_sctp.c:685)
+[utlsctp]:Socket Name: 0.0.0.0:0
+[enbctrl]:[PKT]SCTP Start: 172.16.0.105:36412
+[core]:Enter-Func:wps_core_mme_delete (wps_core_mme.c:288)
+[core]:Enter-Func:wps_core_api_isContainedGummei (wps_core_api.c:848)
+[core]:[API] 	PLMN(466.66).
+[core]:[API] 	GROUPID(701).
+[core]:[API] 	MMECODE(77).
+[core]:Enter-Func:core_mme_freeDb (wps_core_mme.c:58)
+[core]:Enter-Func:wps_core_api_freeGummeiPool (wps_core_api.c:624)
+[core]:Enter-Func:wps_core_mme_delete (wps_core_mme.c:288)
+[core]:Enter-Func:wps_core_api_isContainedGummei (wps_core_api.c:848)
+[core]:[API] 	PLMN(466.66).
+[core]:[API] 	GROUPID(701).
+[core]:[API] 	MMECODE(78).
+[core]:[MME] Target MME Not Found.
+[core]:Enter-Func:wps_core_mme_delete (wps_core_mme.c:288)
+[core]:Enter-Func:wps_core_api_isContainedGummei (wps_core_api.c:848)
+[core]:[API] 	PLMN(466.66).
+[core]:[API] 	GROUPID(701).
+[core]:[API] 	MMECODE(78).
+[core]:Enter-Func:core_mme_freeDb (wps_core_mme.c:58)
+[core]:Enter-Func:wps_core_api_freeGummeiPool (wps_core_api.c:624)
+[core]:Enter-Func:wps_core_mme_addGummei (wps_core_mme.c:214)
+[core]:Enter-Func:core_mme_allocDb (wps_core_mme.c:47)
+[core]:Enter-Func:wps_core_api_allocGummeiPool (wps_core_api.c:613)
+[core]:Enter-Func:wps_core_api_setGummeiToPool (wps_core_api.c:748)
+[core]:Enter-Func:wps_core_api_setPlmnOfGummeiPool (wps_core_api.c:677)
+[core]:Enter-Func:wps_core_api_setGroupIdOfGummeiPool (wps_core_api.c:702)
+[core]:Enter-Func:wps_core_api_setMmecOfGummeiPool (wps_core_api.c:727)
+[core]:Enter-Func:wps_core_mme_addName (wps_core_mme.c:239)
+[core]:Enter-Func:wps_core_api_allocTrackingArea (wps_core_api.c:890)
+[core]:Enter-Func:wps_core_api_setTaiToTrackingArea (wps_core_api.c:1000)
+[core]:Enter-Func:wps_core_api_setTracOfTrackingArea (wps_core_api.c:959)
+[core]:Enter-Func:wps_core_api_setPlmnOfTrackingArea (wps_core_api.c:979)
+[core]:Enter-Func:wps_core_db_setLocalTrackingArea (wps_core_db.c:227)
+[core]:Enter-Func:wps_core_api_getTracOfTrackingArea (wps_core_api.c:1031)
+[core]:Enter-Func:wps_core_api_getTracOfTrackingArea (wps_core_api.c:1031)
+[core]:[DB] Fill Tracking Area Code.
+[core]:Enter-Func:wps_core_api_allocTrackingArea (wps_core_api.c:890)
+[core]:Enter-Func:wps_core_api_setTracOfTrackingArea (wps_core_api.c:959)
+[core]:Enter-Func:wps_core_api_getPlmnOfTrackingArea (wps_core_api.c:1013)
+[core]:Enter-Func:wps_core_api_setPlmnOfTrackingArea (wps_core_api.c:979)
+[core]:Enter-Func:wps_core_api_getPlmnOfTrackingArea (wps_core_api.c:1013)
+[core]:Enter-Func:wps_core_api_freeTrackingArea (wps_core_api.c:899)
+[core]:Enter-Func:wps_core_iapi_setLocalEnbToMac (wps_core_iapi.c:97)
+[core]:Enter-Func:wps_core_api_allocEnbConf (wps_core_api.c:363)
+[core]:Enter-Func:wps_core_db_getLocalEnbConf (wps_core_db.c:49)
+[core]:Enter-Func:wps_core_api_allocEnbConf (wps_core_api.c:363)
+[core]:Enter-Func:wps_core_api_cpyEnbConf (wps_core_api.c:386)
+[core]:Enter-Func:wps_core_api_allocTrackingArea (wps_core_api.c:890)
+[core]:Enter-Func:wps_core_api_cpyTrackingArea (wps_core_api.c:928)
+[core]:Enter-Func:wps_core_api_allocTrackingArea (wps_core_api.c:890)
+[core]:Enter-Func:wps_core_api_cpyTrackingArea (wps_core_api.c:928)
+[core]:Enter-Func:wps_core_api_allocCsgId (wps_core_api.c:50)
+[core]:Enter-Func:wps_core_api_allocCsgId (wps_core_api.c:50)
+[core]:Enter-Func:wps_core_api_cpyFddCellInfo (wps_core_api.c:88)
+[core]:Enter-Func:wps_core_api_cpyEnbConf (wps_core_api.c:386)
+[core]:Enter-Func:wps_core_api_allocTrackingArea (wps_core_api.c:890)
+[core]:Enter-Func:wps_core_api_cpyTrackingArea (wps_core_api.c:928)
+[core]:Enter-Func:wps_core_api_allocTrackingArea (wps_core_api.c:890)
+[core]:Enter-Func:wps_core_api_cpyTrackingArea (wps_core_api.c:928)
+[core]:Enter-Func:wps_core_api_allocCsgId (wps_core_api.c:50)
+[core]:Enter-Func:wps_core_api_allocCsgId (wps_core_api.c:50)
+[core]:Enter-Func:wps_core_api_cpyFddCellInfo (wps_core_api.c:88)
+[core]:Enter-Func:wps_core_api_allocCellInfo (wps_core_api.c:116)
+[core]:Enter-Func:wps_core_api_cpyFddCellInfo (wps_core_api.c:88)
+[core]:Enter-Func:wps_core_api_getNbrCount (wps_core_api.c:527)
+[core]:Enter-Func:wps_core_db_getNbrCount (wps_core_db.c:653)
+[core]:Enter-Func:wps_core_api_allocEnbConf (wps_core_api.c:363)
+[core]:Enter-Func:wps_core_api_getNbrFromIndex (wps_core_api.c:483)
+[core]:Enter-Func:wps_core_db_getNbrFromIndex (wps_core_db.c:641)
+[core]:Enter-Func:wps_core_api_cpyEnbConf (wps_core_api.c:386)
+[core]:Enter-Func:wps_core_api_cpyFddCellInfo (wps_core_api.c:88)
+[core]:Enter-Func:wps_core_api_cpyTddCellInfo (wps_core_api.c:109)
+[core]:Enter-Func:wps_core_api_allocCellInfo (wps_core_api.c:116)
+[core]:Enter-Func:wps_core_api_cpyFddCellInfo (wps_core_api.c:88)
+[core]:Enter-Func:wps_core_api_getNbrCount (wps_core_api.c:527)
+[core]:Enter-Func:wps_core_db_getNbrCount (wps_core_db.c:653)
+[core]:Enter-Func:wps_core_api_allocEnbConf (wps_core_api.c:363)
+[core]:Enter-Func:wps_core_api_getNbrFromIndex (wps_core_api.c:483)
+[core]:Enter-Func:wps_core_db_getNbrFromIndex (wps_core_db.c:641)
+[core]:Enter-Func:wps_core_api_cpyEnbConf (wps_core_api.c:386)
+[core]:Enter-Func:wps_core_api_cpyFddCellInfo (wps_core_api.c:88)
+[core]:Enter-Func:wps_core_api_cpyTddCellInfo (wps_core_api.c:109)
+[core]:Enter-Func:wps_core_api_freeEnbConf (wps_core_api.c:374)
+[core]:Enter-Func:wps_core_api_freeTrackingArea (wps_core_api.c:899)
+[core]:Enter-Func:wps_core_api_freeTrackingArea (wps_core_api.c:899)
+[kclient]:[INFO]out data size(4096)
+
+[kclient]:__CMD__  mod(5:WPS_TNL_KMOD) cmd(15) dataLen(445)
+[core]:Enter-Func:wps_core_iapi_setNbrEnbToMac (wps_core_iapi.c:114)
+[core]:Enter-Func:wps_core_db_getNbrCount (wps_core_db.c:653)
+[core]:Enter-Func:wps_core_api_allocEnbConf (wps_core_api.c:363)
+[core]:Enter-Func:wps_core_db_getNbrFromIndex (wps_core_db.c:641)
+[core]:Enter-Func:wps_core_api_cpyEnbConf (wps_core_api.c:386)
+[core]:Enter-Func:wps_core_api_cpyFddCellInfo (wps_core_api.c:88)
+[core]:Enter-Func:wps_core_api_cpyTddCellInfo (wps_core_api.c:109)
+[core]:Enter-Func:wps_core_api_getLocalTrackingAreaCount (wps_core_api.c:1244)
+[core]:Enter-Func:wps_core_db_getLocalTrackingAreaCount (wps_core_db.c:284)
+[core]:Enter-Func:wps_core_api_allocTrackingArea (wps_core_api.c:890)
+[core]:Enter-Func:wps_core_api_getLocalTrackingArea (wps_core_api.c:1238)
+[core]:Enter-Func:wps_core_db_getLocalTrackingArea (wps_core_db.c:269)
+[core]:Enter-Func:wps_core_api_cpyTrackingArea (wps_core_api.c:928)
+[core]:Enter-Func:wps_core_api_getTracOfTrackingArea (wps_core_api.c:1031)
+[core]:Enter-Func:wps_core_api_allocCellInfo (wps_core_api.c:116)
+[core]:Enter-Func:wps_core_api_getPlmnOfTrackingArea (wps_core_api.c:1013)
+[core]:Enter-Func:wps_core_api_getPlmnOfTrackingArea (wps_core_api.c:1013)
+[core]:Enter-Func:wps_core_api_cpyFddCellInfo (wps_core_api.c:88)
+[core]:Enter-Func:wps_core_api_cpyTddCellInfo (wps_core_api.c:109)
+[core]:Enter-Func:wps_core_api_allocTrackingArea (wps_core_api.c:890)
+[core]:Enter-Func:wps_core_api_getLocalTrackingArea (wps_core_api.c:1238)
+[core]:Enter-Func:wps_core_db_getLocalTrackingArea (wps_core_db.c:269)
+[core]:Enter-Func:wps_core_api_cpyTrackingArea (wps_core_api.c:928)
+[core]:Enter-Func:wps_core_api_getTracOfTrackingArea (wps_core_api.c:1031)
+[core]:Enter-Func:wps_core_api_allocCellInfo (wps_core_api.c:116)
+[core]:Enter-Func:wps_core_api_getPlmnOfTrackingArea (wps_core_api.c:1013)
+[core]:Enter-Func:wps_core_api_getPlmnOfTrackingArea (wps_core_api.c:1013)
+[core]:Enter-Func:wps_core_api_cpyFddCellInfo (wps_core_api.c:88)
+[core]:Enter-Func:wps_core_api_cpyTddCellInfo (wps_core_api.c:109)
+[core]:Enter-Func:wps_core_api_freeEnbConf (wps_core_api.c:374)
+[kclient]:[INFO]out data size(4096)
+
+[kclient]:__CMD__  mod(5:WPS_TNL_KMOD) cmd(16) dataLen(403)
+[core]:Enter-Func:wps_core_db_getNbrCount (wps_core_db.c:653)
+[core]:Enter-Func:wps_core_api_getLocalIp (wps_core_api.c:1164)
+[core]:Enter-Func:wps_core_db_getLocalIp (wps_core_db.c:67)
+[enbctrl]:Enter-Func:enbctrl_startSctpComm (enbctrl_comm.c:320)
+[utlsctp]:Enter-Func:utl_sctp_openSocket (utl_sctp.c:582)
+[utlsctp]:Expect socket name: 172.16.0.105:36422
+[utlsctp]:Sockname: 172.16.0.105:36422
+[utlsctp]:Check "/proc/net/sctp"
+[utlsctp]:Enter-Func:utl_sctp_startSocket (utl_sctp.c:685)
+[utlsctp]:Socket Name: 172.16.0.105:36422
+[enbctrl]:[PKT]SCTP Start: 172.16.0.105:36422
+[s1conn]:Enter-Func:wps_s1conn_api_setup (wps_s1conn_api.c:151)
+[s1conn]:Enter-Func:wps_s1conn_eapi_isSetup (wps_s1conn_eapi.c:139)
+[core]:Enter-Func:wps_core_api_isSetupS1Flag (wps_core_api.c:1354)
+[core]:Enter-Func:wps_core_mme_isSetup (wps_core_mme.c:432)
+[core]:Enter-Func:wps_core_api_isContainedGummei (wps_core_api.c:848)
+[core]:[API] 	PLMN(466.66).
+[core]:[API] 	GROUPID(701).
+[core]:[API] 	MMECODE(77).
+[s1conn]:[API]Start S1 Setup Procedure.
+[s1conn]:Enter-Func:wps_s1conn_sm_startSetup (wps_s1conn_sm_setup.c:335)
+[s1conn]:Enter-Func:wps_s1conn_eapi_getMmeIp (wps_s1conn_eapi.c:133)
+[core]:Enter-Func:wps_core_api_getMmeIp (wps_core_api.c:1311)
+[core]:Enter-Func:wps_core_mme_getIp (wps_core_mme.c:309)
+[core]:[MME] Get Gummei(466.66.701.77) MMEIP.
+[core]:Enter-Func:wps_core_api_isContainedGummei (wps_core_api.c:848)
+[core]:[API] 	PLMN(466.66).
+[core]:[API] 	GROUPID(701).
+[core]:[API] 	MMECODE(77).
+[s1conn]:Enter-Func:s1conn_sm_setup_getStateMachine (wps_s1conn_sm_setup.c:129)
+[s1conn]:Enter-Func:s1conn_sm_setup_allocStateMachine (wps_s1conn_sm_setup.c:102)
+[s1conn]:Enter-Func:wps_s1conn_iapi_allocEnbContext (wps_s1conn_iapi.c:49)
+[s1conn]:Enter-Func:wps_s1conn_eapi_getLoContext (wps_s1conn_eapi.c:198)
+[core]:Enter-Func:wps_core_api_getLocalId (wps_core_api.c:1194)
+[core]:Enter-Func:wps_core_db_getLocalId (wps_core_db.c:148)
+[core]:Enter-Func:wps_core_api_getLocalName (wps_core_api.c:1182)
+[core]:Enter-Func:wps_core_db_getLocalName (wps_core_db.c:117)
+[core]:Enter-Func:wps_core_api_getLocalTrackingAreaCount (wps_core_api.c:1244)
+[core]:Enter-Func:wps_core_db_getLocalTrackingAreaCount (wps_core_db.c:284)
+[core]:Enter-Func:wps_core_api_allocTrackingArea (wps_core_api.c:890)
+[core]:Enter-Func:wps_core_api_getLocalTrackingArea (wps_core_api.c:1238)
+[core]:Enter-Func:wps_core_db_getLocalTrackingArea (wps_core_db.c:269)
+[core]:Enter-Func:wps_core_api_cpyTrackingArea (wps_core_api.c:928)
+[core]:Enter-Func:wps_core_api_getLocalTrackingAreaCount (wps_core_api.c:1244)
+[core]:Enter-Func:wps_core_db_getLocalTrackingAreaCount (wps_core_db.c:284)
+[core]:Enter-Func:wps_core_api_allocTrackingArea (wps_core_api.c:890)
+[core]:Enter-Func:wps_core_api_getLocalTrackingArea (wps_core_api.c:1238)
+[core]:Enter-Func:wps_core_db_getLocalTrackingArea (wps_core_db.c:269)
+[core]:Enter-Func:wps_core_api_cpyTrackingArea (wps_core_api.c:928)
+[core]:Enter-Func:wps_core_api_getLocalTrackingAreaCount (wps_core_api.c:1244)
+[core]:Enter-Func:wps_core_db_getLocalTrackingAreaCount (wps_core_db.c:284)
+[core]:Enter-Func:wps_core_api_getLocalServedCsgCount (wps_core_api.c:1268)
+[core]:Enter-Func:wps_core_db_getLocalServedCsgCount (wps_core_db.c:343)
+[core]:Enter-Func:wps_core_api_getLocalServedCsg (wps_core_api.c:1262)
+[core]:Enter-Func:wps_core_db_getLocalServedCsg (wps_core_db.c:331)
+[core]:Enter-Func:wps_core_api_getLocalServedCsgCount (wps_core_api.c:1268)
+[core]:Enter-Func:wps_core_db_getLocalServedCsgCount (wps_core_db.c:343)
+[core]:Enter-Func:wps_core_api_getLocalServedCsg (wps_core_api.c:1262)
+[core]:Enter-Func:wps_core_db_getLocalServedCsg (wps_core_db.c:331)
+[core]:Enter-Func:wps_core_api_getLocalServedCsgCount (wps_core_api.c:1268)
+[core]:Enter-Func:wps_core_db_getLocalServedCsgCount (wps_core_db.c:343)
+[core]:Enter-Func:wps_core_api_getLoaclDefaultDrx (wps_core_api.c:1212)
+[core]:Enter-Func:wps_core_db_getLoaclDefaultDrx (wps_core_db.c:186)
+[core]:Enter-Func:wps_core_api_getLoaclNbDefaultDrx (wps_core_api.c:1225)
+[core]:Enter-Func:wps_core_db_getLoaclNbDefaultDrx (wps_core_db.c:207)
+[s1conn]:Enter-Func:s1conn_sm_setup_addStateMachine2List (wps_s1conn_sm_setup.c:114)
+[s1conn]:[SM]State:INITIALIZE -> INITIALIZE MME(172.16.0.13/ 466.66.701.77)
+[s1conn]:Enter-Func:s1conn_sm_setup_stateTransition (wps_s1conn_sm_setup.c:264)
+[s1conn]:[SM]State:INITIALIZE -> S1SETUP_SEND_REQ MME(172.16.0.13/ 466.66.701.77)
+[s1conn]:Enter-Func:wps_s1conn_tx_sendSetupReq (wps_s1conn_tx.c:39)
+[s1ap]:Enter-Func:wps_s1ap_api_allocS1SetupReqS1apParam (wps_s1ap_api.c:63)
+[s1conn]:Enter-Func:wps_s1conn_eapi_allocTrackingArea (wps_s1conn_eapi.c:114)
+[core]:Enter-Func:wps_core_api_allocTrackingArea (wps_core_api.c:890)
+[core]:Enter-Func:wps_core_api_cpyTrackingArea (wps_core_api.c:928)
+[s1conn]:Enter-Func:wps_s1conn_eapi_allocTrackingArea (wps_s1conn_eapi.c:114)
+[core]:Enter-Func:wps_core_api_allocTrackingArea (wps_core_api.c:890)
+[core]:Enter-Func:wps_core_api_cpyTrackingArea (wps_core_api.c:928)
+[s1ap]:Enter-Func:wps_s1ap_api_txS1SetupReq (wps_s1ap_api.c:81)
+[s1ap]:Enter-Func:wps_s1ap_tx_s1SetupReq (wps_s1ap_tx_x86-64.c:2201)
+[s1ap]:Enter-Func:encode_S1AP_PDU (wps_s1ap_tx_x86-64.c:266)
+[s1ap]:[TX]Initiating Message:
+[s1ap]:[TX]	Procedure Code(rua_asn_id_XXX = ): 17.
+[s1ap]:[TX]	Criticality(0: reject, 1: ignore, 2: notify): 0
+[s1ap]:[TX]	Pdu Number: 71.
+[s1ap]:[TX]	Length: 0.
+[s1ap]:[TX]	Encoded Val: NULL.
+[s1ap]:[TX]	Decoded Value.
+[s1ap]:[TX]Encode Protocol IEs:
+[s1ap]:Enter-Func:encodeIE_Global_ENB_ID (wps_s1ap_tx_x86-64.c:739)
+[s1ap]:[TX]eci=66.
+[s1ap]:[RX]macroEebId:[0]00 [1]00 [2]00 [3]00.
+[s1ap]:Enter-Func:encode_protocolIEs (wps_s1ap_tx_x86-64.c:412)
+[s1ap]:[TX]Fill in protocol IE: 
+[s1ap]:[TX]	Id: 59
+[s1ap]:[TX]	Criticality: 0
+[s1ap]:[TX]	Pdu Number: 164
+[s1ap]:[TX]	Length: 0
+[s1ap]:[TX]	Encoded: Empty.
+[s1ap]:[TX]	Decoded Val: GLOBAL_ENB_ID.
+[s1ap]:[TX]Fill in protocol IE End.
+[s1ap]:Enter-Func:encodeIE_ENBname (wps_s1ap_tx_x86-64.c:806)
+[s1ap]:[TX]Encode ENB Name IE.
+[s1ap]:Enter-Func:encode_protocolIEs (wps_s1ap_tx_x86-64.c:412)
+[s1ap]:[TX]Fill in protocol IE: 
+[s1ap]:[TX]	Id: 60
+[s1ap]:[TX]	Criticality: 1
+[s1ap]:[TX]	Pdu Number: 168
+[s1ap]:[TX]	Length: 0
+[s1ap]:[TX]	Encoded: Empty.
+[s1ap]:[TX]	Decoded Val: GENB_NAME.
+[s1ap]:[TX]Fill in protocol IE End.
+[s1ap]:Enter-Func:encodeIE_SupportedTAs_SingleIntem (wps_s1ap_tx_x86-64.c:1019)
+[s1ap]:Enter-Func:setVal_SupportedTAs (wps_s1ap_tx_x86-64.c:165)
+[s1ap]:Enter-Func:setVal_BPLMNs (wps_s1ap_tx_x86-64.c:133)
+[s1ap]:Enter-Func:setVal_SupportedTAs (wps_s1ap_tx_x86-64.c:165)
+[s1ap]:Enter-Func:setVal_BPLMNs (wps_s1ap_tx_x86-64.c:133)
+[s1ap]:Enter-Func:encode_protocolIEs (wps_s1ap_tx_x86-64.c:412)
+[s1ap]:[TX]Fill in protocol IE: 
+[s1ap]:[TX]	Id: 64
+[s1ap]:[TX]	Criticality: 0
+[s1ap]:[TX]	Pdu Number: 252
+[s1ap]:[TX]	Length: 0
+[s1ap]:[TX]	Encoded: Empty.
+[s1ap]:[TX]	Decoded Val: SUPPORT_TAs.
+[s1ap]:[TX]Fill in protocol IE End.
+[s1ap]:Enter-Func:encodeIE_PagingDRX (wps_s1ap_tx_x86-64.c:826)
+[s1ap]:Enter-Func:encode_protocolIEs (wps_s1ap_tx_x86-64.c:412)
+[s1ap]:[TX]Fill in protocol IE: 
+[s1ap]:[TX]	Id: 137
+[s1ap]:[TX]	Criticality: 1
+[s1ap]:[TX]	Pdu Number: 220
+[s1ap]:[TX]	Length: 0
+[s1ap]:[TX]	Encoded: Empty.
+[s1ap]:[TX]	Decoded Val: DEF_PAG_DRX.
+[s1ap]:[TX]Fill in protocol IE End.
+[s1ap]:Enter-Func:encodeIE_NbiotPagingDRX (wps_s1ap_tx_x86-64.c:855)
+[s1ap]:Enter-Func:encode_protocolIEs (wps_s1ap_tx_x86-64.c:412)
+[s1ap]:[TX]Fill in protocol IE: 
+[s1ap]:[TX]	Id: 234
+[s1ap]:[TX]	Criticality: 1
+[s1ap]:[TX]	Pdu Number: 213
+[s1ap]:[TX]	Length: 0
+[s1ap]:[TX]	Encoded: Empty.
+[s1ap]:[TX]	Decoded Val: NBIOT_DEF_PAG_DRX.
+[s1ap]:[TX]Fill in protocol IE End.
+[s1ap]:[TX]Packed PDU: 
+value S1AP-PDU ::= initiatingMessage : 
+  {
+    procedureCode 17,
+    criticality reject,
+    value S1SetupRequest : 
+    {
+      protocolIEs 
+      {
+        {
+          id 59,
+          criticality reject,
+          value Global-ENB-ID : 
+          {
+            pLMNidentity '64F666'H,
+            eNB-ID macroENB-ID : '00000000 00000000 0000'B
+          }
+        },
+        {
+          id 60,
+          criticality ignore,
+          value ENBname : "mcc466.mnc66.cell66"
+        },
+        {
+          id 64,
+          criticality reject,
+          value SupportedTAs : 
+          {
+            {
+              tAC '00CA'H,
+              broadcastPLMNs 
+              {
+                '64F666'H
+              },
+              iE-Extensions 
+              {
+                {
+                  id 232,
+                  criticality reject,
+                  extensionValue RAT-Type : nbiot
+                }
+              }
+            },
+            {
+              tAC '00CD'H,
+              broadcastPLMNs 
+              {
+                '64F666'H
+              },
+              iE-Extensions 
+              {
+                {
+                  id 232,
+                  criticality reject,
+                  extensionValue RAT-Type : nbiot
+                }
+              }
+            }
+          }
+        },
+        {
+          id 137,
+          criticality ignore,
+          value PagingDRX : v256
+        },
+        {
+          id 234,
+          criticality ignore,
+          value NB-IoT-DefaultPagingDRX : v1024
+        }
+      }
+    }
+  }
+Number PDUs: 1.
+
+S1AP-PDU CHOICE [index = 0]
+  initiatingMessage InitiatingMessage SEQUENCE [fieldcount (not encoded) = 3]
+    procedureCode ProcedureCode INTEGER [length (not encoded) = 1.0]
+      17
+    criticality Criticality ENUMERATED [length (not encoded) = 0.2]
+      0
+    value S1SetupRequest SEQUENCE [fieldcount (not encoded) = 1]
+      protocolIEs SEQUENCE OF [count = 5]
+        SEQUENCE [fieldcount (not encoded) = 3]
+          id ProtocolIE-ID INTEGER [length (not encoded) = 2.0]
+            59
+          criticality Criticality ENUMERATED [length (not encoded) = 0.2]
+            0
+          value Global-ENB-ID SEQUENCE [fieldcount (not encoded) = 2]
+            pLMNidentity PLMNidentity OCTET STRING [length (not encoded) = 3.0]
+              0x64f666
+            eNB-ID ENB-ID CHOICE [index = 0]
+              macroENB-ID BIT STRING [length (not encoded) = 2.4]
+                0x000000
+        SEQUENCE [fieldcount (not encoded) = 3]
+          id ProtocolIE-ID INTEGER [length (not encoded) = 2.0]
+            60
+          criticality Criticality ENUMERATED [length (not encoded) = 0.2]
+            1
+          value ENBname PrintableString [length = 19.0]
+            "mcc466.mnc66.cell66"
+        SEQUENCE [fieldcount (not encoded) = 3]
+          id ProtocolIE-ID INTEGER [length (not encoded) = 2.0]
+            64
+          criticality Criticality ENUMERATED [length (not encoded) = 0.2]
+            0
+          value SupportedTAs SEQUENCE OF [count = 2]
+            SupportedTAs-Item SEQUENCE [fieldcount (not encoded) = 3]
+              tAC TAC OCTET STRING [length (not encoded) = 2.0]
+                0x00ca
+              broadcastPLMNs BPLMNs SEQUENCE OF [count = 1]
+                PLMNidentity OCTET STRING [length (not encoded) = 3.0]
+                  0x64f666
+              iE-Extensions SEQUENCE OF [count = 1]
+                SEQUENCE [fieldcount (not encoded) = 3]
+                  id ProtocolExtensionID INTEGER [length (not encoded) = 2.0]
+                    232
+                  criticality Criticality ENUMERATED [length (not encoded) = 0.2]
+                    0
+                  extensionValue RAT-Type ENUMERATED [length (not encoded) = 0.0]
+                    0
+            SupportedTAs-Item SEQUENCE [fieldcount (not encoded) = 3]
+              tAC TAC OCTET STRING [length (not encoded) = 2.0]
+                0x00cd
+              broadcastPLMNs BPLMNs SEQUENCE OF [count = 1]
+                PLMNidentity OCTET STRING [length (not encoded) = 3.0]
+                  0x64f666
+              iE-Extensions SEQUENCE OF [count = 1]
+                SEQUENCE [fieldcount (not encoded) = 3]
+                  id ProtocolExtensionID INTEGER [length (not encoded) = 2.0]
+                    232
+                  criticality Criticality ENUMERATED [length (not encoded) = 0.2]
+                    0
+                  extensionValue RAT-Type ENUMERATED [length (not encoded) = 0.0]
+                    0
+        SEQUENCE [fieldcount (not encoded) = 3]
+          id ProtocolIE-ID INTEGER [length (not encoded) = 2.0]
+            137
+          criticality Criticality ENUMERATED [length (not encoded) = 0.2]
+            1
+          value PagingDRX ENUMERATED [length (not encoded) = 0.2]
+            3
+        SEQUENCE [fieldcount (not encoded) = 3]
+          id ProtocolIE-ID INTEGER [length (not encoded) = 2.0]
+            234
+          criticality Criticality ENUMERATED [length (not encoded) = 0.2]
+            1
+          value NB-IoT-DefaultPagingDRX ENUMERATED [length (not encoded) = 0.2]
+            3
+Total encoded length = 85.0
+00110051 00000500 3B000800 64F66600 00000000 3C401509 006D6363 3436362E
+6D6E6336 362E6365 6C6C3636 0040001B 01403280 64F66600 0000E800 01004033
+4064F666 000000E8 00010000 89400160 00EA4001 60
+[s1ap]:Enter-Func:wps_s1ap_iapi_txSctpmsg (wps_s1ap_iapi_x86-64.c:119)
+[s1ap]:Enter-Func:wps_s1ap_eapi_sendSctpmsg (wps_s1ap_eapi.c:168)
+[enbctrl]:Enter-Func:enbctrl_sendSctpmsg (enbctrl_comm.c:400)
+[enbctrl]:[PKT]Enter enbctrl_sendSctpmsg.
+[enbctrl]:[PKT][S1apSetupReq-enbctrl_sendSctpmsg] IP = 172.16.0.13
+[enbctrl]:[PKT]Remote Socket Not Found.
+[utlsctp]:Enter-Func:ult_sctp_send (utl_sctp.c:960)
+[utlsctp]:MSG(85): .
+[utlsctp]:Connect to 172.16.0.13.
+[utlsctp]:REG: 172.16.0.13:36412.
+[utlsctp]:Socket Name: 172.16.0.105:36412
+[enbctrl]:[PKT]SCTP SENT To(172.16.0.13:36412): Length(85).
+[s1ap]:[IAPI]Send Sctp Message Successfully(DSTIP 172.16.0.13).
+[s1ap]:Exit-Func:wps_s1ap_tx_s1SetupReq (wps_s1ap_tx_x86-64.c:2316)
+[core]:Enter-Func:wps_core_api_freeTrackingArea (wps_core_api.c:899)
+[core]:Enter-Func:wps_core_api_freeTrackingArea (wps_core_api.c:899)
+[s1conn]:[INFO]S1AP---S1 Setup Request--->MMEIP(172.16.0.13).
+[utlsctp]:Enter-Func:sctp_readFd (utl_sctp.c:241)
+[utlsctp]:Sockname: 172.16.0.105:36412
+[utlsctp]:From IP: 172.16.0.13:36412
+[utlsctp]:PPID 18/ Len 61
+[utlsctp]:Data:  
+[enbctrl]:[PKT]SCTP RCV( RIP:RPORT/LIP:LPORT - 172.16.0.13:36412/ 172.16.0.105:36412 ): PPID(18), Length(61).
+[enbctrl]:[PKT]SCTP REG( RIP:RPORT - 172.16.0.13:36412): PPID(18)
+[s1ap]:Enter-Func:wps_s1ap_api_recvSctpPkt (wps_s1ap_api.c:1598)
+[s1ap]:Enter-Func:wps_s1ap_iapi_allocParam (wps_s1ap_iapi_x86-64.c:58)
+[s1ap]:[API]Src IP: 172.16.0.13.
+[s1ap]:[API]PPID: 18.
+[s1ap]:[API]Receive Payload: 
+
+20 11 00 39 00 00 03 00 3d 
+40 1e 0d 80 6d 63 63 34 36 
+36 2e 6d 6e 63 36 36 2e 6d 
+6d 65 67 69 37 30 31 2e 6d 
+6d 65 63 31 33 00 69 00 0b 
+00 00 64 f6 66 00 00 02 bd 
+00 0d 00 57 40 01 00 
+[s1ap]:[RX]wps_s1ap_rx_decodeAsnMsg 0
+[s1ap]:Enter-Func:wps_s1ap_rx_decodeAsnMsg (wps_s1ap_rx.c:3600)
+[s1ap]:[RX] The input data length = 61
+
+20 11 00 39 00 00 03 00 3d 40 1e 0d 80 6d 63 63 
+34 36 36 2e 6d 6e 63 36 36 2e 6d 6d 65 67 69 37 
+30 31 2e 6d 6d 65 63 31 33 00 69 00 0b 00 00 64 
+f6 66 00 00 02 bd 00 0d 00 57 40 01 00 
+[s1ap]:[RX]Start ossDecode !!! 
+S1AP-PDU CHOICE [index = 1]
+  successfulOutcome SuccessfulOutcome SEQUENCE [fieldcount (not encoded) = 3]
+    procedureCode ProcedureCode INTEGER [length (not encoded) = 1.0]
+      17
+    criticality Criticality ENUMERATED [length (not encoded) = 0.2]
+      0
+    value S1SetupResponse SEQUENCE [fieldcount (not encoded) = 1]
+      protocolIEs SEQUENCE OF [count = 3]
+        SEQUENCE [fieldcount (not encoded) = 3]
+          id ProtocolIE-ID INTEGER [length (not encoded) = 2.0]
+            61
+          criticality Criticality ENUMERATED [length (not encoded) = 0.2]
+            1
+          value MMEname PrintableString [length = 28.0]
+            "mcc466.mnc66.mmegi701.mmec13"
+        SEQUENCE [fieldcount (not encoded) = 3]
+          id ProtocolIE-ID INTEGER [length (not encoded) = 2.0]
+            105
+          criticality Criticality ENUMERATED [length (not encoded) = 0.2]
+            0
+          value ServedGUMMEIs SEQUENCE OF [count = 1]
+            ServedGUMMEIsItem SEQUENCE [fieldcount (not encoded) = 3]
+              servedPLMNs ServedPLMNs SEQUENCE OF [count = 1]
+                PLMNidentity OCTET STRING [length (not encoded) = 3.0]
+                  0x64f666
+              servedGroupIDs ServedGroupIDs SEQUENCE OF [count = 1]
+                MME-Group-ID OCTET STRING [length (not encoded) = 2.0]
+                  0x02bd
+              servedMMECs ServedMMECs SEQUENCE OF [count = 1]
+                MME-Code OCTET STRING [length (not encoded) = 1.0]
+                  0x0d
+        SEQUENCE [fieldcount (not encoded) = 3]
+          id ProtocolIE-ID INTEGER [length (not encoded) = 2.0]
+            87
+          criticality Criticality ENUMERATED [length (not encoded) = 0.2]
+            1
+          value RelativeMMECapacity INTEGER [length (not encoded) = 1.0]
+            0
+Total encoded length = 61.0
+[s1ap]:[RX]ossDecode Done!!
+[s1ap]:[RX]	Choice (asn_initiatingMessage_chosen, asn_successfulOutcome_chosen, asn_unsuccessfulOutcome_chosen) : 2
+[s1ap]:[RX]	ProcedureCode (asn_id_XXX = ) : 17
+[s1ap]:[RX]	Criticality (reject,ignore,notify) : 0
+[s1ap]:[RX]	PduNum : 72
+value S1AP-PDU ::= successfulOutcome : 
+  {
+    procedureCode 17,
+    criticality reject,
+    value S1SetupResponse : 
+    {
+      protocolIEs 
+      {
+        {
+          id 61,
+          criticality ignore,
+          value MMEname : "mcc466.mnc66.mmegi701.mmec13"
+        },
+        {
+          id 105,
+          criticality reject,
+          value ServedGUMMEIs : 
+          {
+            {
+              servedPLMNs 
+              {
+                '64F666'H
+              },
+              servedGroupIDs 
+              {
+                '02BD'H
+              },
+              servedMMECs 
+              {
+                '0D'H
+              }
+            }
+          }
+        },
+        {
+          id 87,
+          criticality ignore,
+          value RelativeMMECapacity : 0
+        }
+      }
+    }
+  }
+[s1ap]:[RX]Choose the IE_Decode_Info
+[s1ap]:[RX]Dispatch decode ASN message to handler
+[s1ap]:[RX]S1AP_EVENT_S1_SETUP_RSP!
+[s1ap]:Enter-Func:wps_s1ap_api_allocS1SetupRspS1apParam (wps_s1ap_api.c:99)
+[core]:Enter-Func:wps_core_api_allocGummeiPool (wps_core_api.c:613)
+[s1ap]:Enter-Func:decodeIE_MME_NAME (wps_s1ap_rx.c:211)
+[s1ap]:Exit-Func:decodeIE_MME_NAME (wps_s1ap_rx.c:219)
+[s1ap]:Enter-Func:decodeIE_SERVED_GUMMEIS (wps_s1ap_rx.c:388)
+[s1ap]:Exit-Func:decodeIE_SERVED_GUMMEIS (wps_s1ap_rx.c:480)
+[s1ap]:Enter-Func:decodeIE_RELATIVEMMECAPACITY (wps_s1ap_rx.c:488)
+[s1ap]:Exit-Func:decodeIE_RELATIVEMMECAPACITY (wps_s1ap_rx.c:494)
+[s1ap]:Enter-Func:wps_s1ap_eapi_rcvS1apSetupRsp (wps_s1ap_eapi.c:177)
+[s1conn]:Enter-Func:wps_s1conn_api_alloctSetupRspPkt (wps_s1conn_api.c:168)
+[s1conn]:Enter-Func:wps_s1conn_eapi_allocGummeiPool (wps_s1conn_eapi.c:48)
+[core]:Enter-Func:wps_core_api_allocGummeiPool (wps_core_api.c:613)
+[core]:Enter-Func:wps_core_api_cpyGummeiPool (wps_core_api.c:642)
+[core]:Enter-Func:wps_core_api_freeGummeiPool (wps_core_api.c:624)
+[s1ap]:[INFO]S1AP<---S1 Setup Response---MMEIP(172.16.0.13).
+[s1conn]:Enter-Func:wps_s1conn_api_rcvSetupRspPkt (wps_s1conn_api.c:184)
+[s1conn]:Enter-Func:wps_s1conn_sm_rcvSetupRsp (wps_s1conn_sm_setup.c:369)
+[s1conn]:Enter-Func:s1conn_sm_setup_getStateMachine (wps_s1conn_sm_setup.c:129)
+[s1conn]:[SM][SETUP]MME(172.16.0.13/ 466.66.701.77) Receive MME Context.
+[s1conn]:Enter-Func:wps_s1conn_iapi_allocMmeContext (wps_s1conn_iapi.c:69)
+[s1conn]:Enter-Func:wps_s1conn_eapi_allocGummeiPool (wps_s1conn_eapi.c:48)
+[core]:Enter-Func:wps_core_api_allocGummeiPool (wps_core_api.c:613)
+[s1conn]:[SM][SETUP]MME(172.16.0.13/ 466.66.701.77) Assert MME GUMMEI.
+[s1conn]:[SM][SETUP]MME(172.16.0.13/ 466.66.701.77) Assert MME Capacity.
+[s1conn]:Enter-Func:wps_s1conn_api_freeSetupRspPkt (wps_s1conn_api.c:177)
+[s1conn]:Enter-Func:wps_s1conn_eapi_freeGummeiPool (wps_s1conn_eapi.c:60)
+[core]:Enter-Func:wps_core_api_freeGummeiPool (wps_core_api.c:624)
+[s1conn]:Enter-Func:s1conn_sm_setup_stateTransition (wps_s1conn_sm_setup.c:264)
+[s1ap]:[RX]End of Decode ASN MSG!!!
+[s1ap]:Enter-Func:wps_s1ap_iapi_freeParam (wps_s1ap_iapi_x86-64.c:67)
+[s1ap]:[RX]=== ossFreeBuf ===
+[s1ap]:[RX]=== ossFreePDU ===
+[s1ap]:[RX]=== ossterm(world) ===
+[s1ap]:Exit-Func:wps_s1ap_rx_decodeAsnMsg (wps_s1ap_rx.c:4241)
+[s1conn]:[SM]State:S1SETUP_SEND_REQ -> S1SETUP_RCV_RSP MME(172.16.0.13/ 466.66.701.77)
+[s1conn]:Enter-Func:s1conn_sm_setup_stateTransition (wps_s1conn_sm_setup.c:264)
+[s1conn]:[SM]State:S1SETUP_RCV_RSP -> CLOSE MME(172.16.0.13/ 466.66.701.77)
+[s1conn]:[SM][SETUP]MME(172.16.0.13/ 466.66.701.77) Set MME Context.
+[s1conn]:Enter-Func:wps_s1conn_eapi_setMmeContext (wps_s1conn_eapi.c:174)
+[core]:Enter-Func:wps_core_api_allocGummeiPool (wps_core_api.c:613)
+[core]:Enter-Func:wps_core_api_cpyGummeiPool (wps_core_api.c:642)
+[core]:Enter-Func:wps_core_api_addMme (wps_core_api.c:1293)
+[core]:Enter-Func:wps_core_mme_add (wps_core_mme.c:147)
+[core]:Enter-Func:wps_core_api_getPlmnOfGummeiPool (wps_core_api.c:761)
+[core]:Enter-Func:wps_core_api_getPlmnOfGummeiPool (wps_core_api.c:761)
+[core]:Enter-Func:wps_core_api_getGroupIdOfGummeiPool (wps_core_api.c:780)
+[core]:Enter-Func:wps_core_api_getMmecOfGummeiPool (wps_core_api.c:799)
+[core]:Enter-Func:wps_core_api_freeGummeiPool (wps_core_api.c:624)
+[core]:Enter-Func:wps_core_api_setMmeCapacity (wps_core_api.c:1299)
+[core]:Enter-Func:wps_core_mme_setCapacity (wps_core_mme.c:269)
+[core]:Enter-Func:wps_core_api_setupS1Flag (wps_core_api.c:1360)
+[core]:Enter-Func:wps_core_mme_setup (wps_core_mme.c:398)
+[s1conn]:Enter-Func:s1conn_sm_setup_replyResult (wps_s1conn_sm_setup.c:311)
+[s1conn]:Enter-Func:wps_s1conn_iapi_setupInDone (wps_s1conn_iapi.c:96)
+[s1conn]:Enter-Func:s1conn_sm_setup_delStateMachine (wps_s1conn_sm_setup.c:121)
+[s1conn]:Enter-Func:s1conn_sm_setup_freeStateMachine (wps_s1conn_sm_setup.c:71)
+[s1conn]:Enter-Func:wps_s1conn_iapi_freeEnbContext (wps_s1conn_iapi.c:60)
+[s1conn]:Enter-Func:wps_s1conn_eapi_freeTrackingArea (wps_s1conn_eapi.c:125)
+[core]:Enter-Func:wps_core_api_freeTrackingArea (wps_core_api.c:899)
+[s1conn]:Enter-Func:wps_s1conn_eapi_freeTrackingArea (wps_s1conn_eapi.c:125)
+[core]:Enter-Func:wps_core_api_freeTrackingArea (wps_core_api.c:899)
+[s1conn]:Enter-Func:wps_s1conn_iapi_freeMmeContext (wps_s1conn_iapi.c:89)
+[s1conn]:Enter-Func:wps_s1conn_eapi_freeGummeiPool (wps_s1conn_eapi.c:60)
+[core]:Enter-Func:wps_core_api_freeGummeiPool (wps_core_api.c:624)
